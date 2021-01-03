@@ -21,7 +21,7 @@ local StudioService = game:GetService("StudioService")
 
 local StudioLocalId = StudioService:GetUserId()
 
-return function(Id, ScanFunction, GetObjectsFunction, RepeatCount, IdIgnoreTable, IsDebug, SafeHashes, HashSource, SeperateMalIds, ScannerSettingsTable)
+return function(Id, ScanFunction, GetObjectsFunction, RepeatCount, IdIgnoreTable, IsDebug, SafeHashes, HashSource, SeperateMalIds, ScannerSettingsTable, BadGroups, BadUsers)
 	if not IdIgnoreTable then
 		warn("[Ti-Protection]: Cached table not found! , FunctionArgs: " .. string.format(
 			"Id: %s, ScanFunction: %s, GetObjsFunction: %s, Repeatcount: %s, IdIgnoreTable: %s, IsDebug: %s, SafeHashes: %s, HashSource: %s, SeperateMalIds: %s, ScannerSettingsTable: %s, ScannerSTableLen: %s",
@@ -45,56 +45,61 @@ return function(Id, ScanFunction, GetObjectsFunction, RepeatCount, IdIgnoreTable
 			end)
 			
 			if Succ and info and type(info) == "table" and not((game.CreatorType == Enum.CreatorType.User and info.Creator.CreatorType == "User" or game.CreatorType == Enum.CreatorType.Group and info.Creator.CreatorType == "Group") and (game.CreatorId == info.Creator.CreatorTargetId or StudioLocalId == info.Creator.CreatorTargetId)) then -- // We check if the asset can be scanned.
-				if IsDebug then
-					print("[Ti-Protection]: Checking for viruses: rbxassetid://"..RealId)
-				end
-				if RepeatCount > 5 then -- // We check if the module is obfuscated with a require id chain.
-					IsObf = true
+				if info.Creator.CreatorType == "Group" and BadGroups[info.Creator.CreatorTargetId] or info.Creator.CreatorType == "User" and BadUsers[info.Creator.CreatorTargetId] then
+					IsVir, IsSus, IsObf, IsLar, IsAdw = true, true, true, true, true
+					IdIgnoreTable[RealId] = {IsVir, IsSus, IsObf, IsLar, IsAdw} -- // We cache our results
 				else
-					local Success, Error = pcall(function()
-						local Objs = game:GetObjects("rbxassetid://"..tostring(RealId))
-						for _, Obj in ipairs(GetObjectsFunction("Fast", Objs)) do
-							if Obj then
-								-- // We first set a dummy table for the cache so the script does not repeatedly scan the module.
-								IdIgnoreTable[RealId] = {false, false, false, false, false}
-								
-								-- // We scan the descendants of the asset.
-								local CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware = unpack(ScannerSettingsTable)
-								IsVir, IsSus, IsObf, IsLar, IsAdw = ScanFunction(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware, RepeatCount, IdIgnoreTable, SeperateMalIds, IsDebug)
-								
-								if IsVir or IsSus or IsObf or IsLar or IsAdw then
-									if not(Obj:IsA("LuaSourceContainer") and (string.len(Obj.Source) < 400000 and SafeHashes[HashSource(Obj.Source)])) then
-										if IsVir then
-											if IsDebug then
-												print("[Ti-Protection]: Found viruses in module: rbxassetid://"..RealId)
+					if IsDebug then
+						print("[Ti-Protection]: Checking for viruses: rbxassetid://"..RealId)
+					end
+					
+					if RepeatCount > 5 then -- // We check if the module is obfuscated with a require id chain.
+						IsObf = true
+					else
+						local Success, Error = pcall(function()
+							local Objs = game:GetObjects("rbxassetid://"..tostring(RealId))
+							for _, Obj in ipairs(GetObjectsFunction("Fast", Objs)) do
+								if Obj then
+									-- // We first set a dummy table for the cache so the script does not repeatedly scan the module.
+									IdIgnoreTable[RealId] = {false, false, false, false, false}
+									
+									-- // We scan the descendants of the asset.
+									local CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware = unpack(ScannerSettingsTable)
+									IsVir, IsSus, IsObf, IsLar, IsAdw = ScanFunction(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware, RepeatCount, IdIgnoreTable, SeperateMalIds, IsDebug)
+									
+									if IsVir or IsSus or IsObf or IsLar or IsAdw then
+										if not(Obj:IsA("LuaSourceContainer") and (string.len(Obj.Source) < 400000 and SafeHashes[HashSource(Obj.Source)])) then
+											if IsVir then
+												if IsDebug then
+													print("[Ti-Protection]: Found viruses in module: rbxassetid://"..RealId)
+												end
+												break
+											elseif IsDebug then
+												print("[Ti-Protection]: Found suspicious activity in module: rbxassetid://"..RealId)
 											end
-											break
-										elseif IsDebug then
-											print("[Ti-Protection]: Found suspicious activity in module: rbxassetid://"..RealId)
+										else
+											if IsDebug then
+												print("[Ti-Protection]: ", Obj:GetFullName(), " was not scanned because it was whitelisted.")
+											end
+											IsVir, IsSus, IsObf, IsLar, IsAdw = false, false, false, false, false
 										end
-									else
-										if IsDebug then
-											print("[Ti-Protection]: ", Obj:GetFullName(), " was not scanned because it was whitelisted.")
-										end
-										IsVir, IsSus, IsObf, IsLar, IsAdw = false, false, false, false, false
 									end
+									
+									IdIgnoreTable[RealId] = {IsVir, IsSus, IsObf, IsLar, IsAdw} -- // We cache our results
 								end
-								
-								IdIgnoreTable[RealId] = {IsVir, IsSus, IsObf, IsLar, IsAdw} -- // We cache our results
 							end
-						end
-					end, function(Error)
-						if info.IsPublicDomain == false and Error:match("409") then -- // The asset is a private module
-							IsObf = true
-						elseif (Error:match("403") or Error:lower():match("bad request")) and info.Name:match("[Content Deleted]") then -- // Asset is terminated
-							IsSus = true
-						else
-							warn("[Ti-Protection]: An error occured while trying to check rbxassetid://"..tostring(RealId).." for viruses. Reason "..tostring(Error))
-							print("[Ti-Protection]: "..debug.traceback())
-						end
-					end)
+						end, function(Error)
+							if info.IsPublicDomain == false and Error:match("409") then -- // The asset is a private module
+								IsObf = true
+							elseif (Error:match("403") or Error:lower():match("bad request")) and info.Name:match("[Content Deleted]") then -- // Asset is terminated
+								IsSus = true
+							else
+								warn("[Ti-Protection]: An error occured while trying to check rbxassetid://"..tostring(RealId).." for viruses. Reason "..tostring(Error))
+								print("[Ti-Protection]: "..debug.traceback())
+							end
+						end)
+					end
 				end
-
 			end
 		else -- // We have already cached the state of the module. We will us the cached values.
 			if IsDebug then

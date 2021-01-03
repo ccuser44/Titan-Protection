@@ -236,7 +236,7 @@ for _, v in ipairs(DB.SafeModelIds) do
 	GlobalAssetCache[v] = {false, false, false, false, false}
 end
 
-local DB_VirusNames, DB_StaticVirusNames, DB_malicious_code_snippets, DB_Obfuscation_Detection, DB_Bad_Require_Ids, DB_Adware_Detection_Formates = DB.VirusNames, DB.StaticVirusNames, DB.malicious_code_snippets, DB.Obfuscation_Detection, DB.Bad_Require_Ids, DB.Adware_Detection_Formates
+local DB_VirusNames, DB_StaticVirusNames, DB_malicious_code_snippets, DB_Obfuscation_Detection, DB_Bad_Require_Ids, DB_Adware_Detection_Formates, DB_MaliciousGroups, DB_MaliciousUsers = DB.VirusNames, DB.StaticVirusNames, DB.malicious_code_snippets, DB.Obfuscation_Detection, DB.Bad_Require_Ids, DB.Adware_Detection_Formates, DB.MaliciousGroups, DB.MaliciousUsers
 
 --------------------
 --| UI functions |--
@@ -621,7 +621,7 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 										IsVirus = true
 									end
 								elseif string.len(Id) >= 3 and string.match(Id, "^%d+$") and GetLib("CheckModule") and GetLib("ScanObjectsGet") then -- // We scan the id for malicious content
-									local IsVir, IsSus, IsObf, IsLar, IsAdw = GetLib("CheckModule")(Id, ScanObj, GetLib("ScanObjectsGet"), RepeatCount, CachedIds, IsDebug, SafeHashes, HashSource, SeperateMalIds, {CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware})
+									local IsVir, IsSus, IsObf, IsLar, IsAdw = GetLib("CheckModule")(Id, ScanObj, GetLib("ScanObjectsGet"), RepeatCount, CachedIds, IsDebug, SafeHashes, HashSource, SeperateMalIds, {CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware}, DB_MaliciousGroups, DB_MaliciousUsers)
 									local Detected = IsVir or IsSus or IsObf or IsLar or IsAdw
 									
 									if Detected then
@@ -686,12 +686,8 @@ local function ScanAssets(Assets, Type, CachedIds, IsDebug)
 	local CheckModule =  GetLib("CheckModule")
 	local CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware = Settings.CheckScriptSource, Settings.CheckObfuscation, Settings.CheckWhiteSpace, Settings.CheckLarge, Settings.CheckSnippets, Settings.CheckStructure, Settings.CheckAdware
 	
-	if Settings.IsDebug then
-		print("Check Module function is :", CheckModule, "ScanObjectsGet function is", GetLib("ScanObjectsGet"))
-	end
-	
 	for _, v in ipairs(Assets) do
-		local IsVir, IsSus, IsObf, IsLar, IsAdw = CheckModule(tostring(v), ScanObj, GetLib("ScanObjectsGet"), 0, CachedIds, IsDebug, SafeHashes, HashSource, Settings.CheckRequireIdsAllScripts, {CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware})
+		local IsVir, IsSus, IsObf, IsLar, IsAdw = CheckModule(tostring(v), ScanObj, GetLib("ScanObjectsGet"), 0, CachedIds, IsDebug, SafeHashes, HashSource, Settings.CheckRequireIdsAllScripts, {CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware}, DB_MaliciousGroups, DB_MaliciousUsers)
 		local Detected = IsVir or IsSus or IsObf or IsLar or IsAdw
 		if Detected then
 			table.insert(BadAssets, v)
