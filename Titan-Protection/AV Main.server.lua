@@ -615,7 +615,7 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 									print("Titan protection found require with id ", Id)
 								end
 								
-								if string.match(Id, "[%%%-%+%*/%^%-]") or string.match(Id, "math%.%a+") or string.match(Id, "0x%x%x") or string.match(Id, "[%d%.]+e%d") then -- // We check if the require id is obfuscated. A lot of new backdoors do this.
+								if string.match(Id, "[%%%-%+%*/%^%-]") or string.match(Id, "math%.%a+") or string.match(Id, "0x%x%x") or string.match(Id, "0b[01][01][01]+") or string.match(Id, "[%d%.]+e%d") then -- // We check if the require id is obfuscated. A lot of new backdoors do this.
 									IsObfuscated = true
 									if IsSuspicious then
 										IsVirus = true
