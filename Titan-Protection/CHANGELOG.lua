@@ -1,5 +1,6 @@
 -- [[Version INSERT INSERT - INSERT]],
 return {
+	[[Version Alpha 0.0.8 - Added binary detection in the require obfuscation detection and some small editions.]],
 	[[Version Alpha 0.0.7 - Made malicious users and malicious groups detection list to ease detection.]],
 	[[Version Alpha 0.0.6 - Made into rojo and maybe did some other changes.]],
 	[[Version Alpha 0.0.5 - Shared alpha testing version. Fixed bugs and changed some enhancements. No UI support I am too lazy.]],

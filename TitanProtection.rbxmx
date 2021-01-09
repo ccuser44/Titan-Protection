@@ -1,14 +1,14 @@
 <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBXDF19ACE31A884C8195C972FDC436F19A">
+	<Item class="Folder" referent="RBX302AB90C88574F1AA844865DF7D0FD00">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<string name="Name">|| Titan Protection ||</string>
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Script" referent="RBX3704C87EB80B4169964F0E15513F7BBB">
+		<Item class="Script" referent="RBX640BD68DF92D49A68AF465CC981E218C">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<bool name="Disabled">false</bool>
@@ -914,7 +914,7 @@ end
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="ModuleScript" referent="RBXC33CCE8D39AC4688BE0C18E8576EBB0C">
+		<Item class="ModuleScript" referent="RBX70144C587B914A56B3D68E963D25F443">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -1599,7 +1599,7 @@ Public License instead of this License.  But first, please read
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="ModuleScript" referent="RBX35D6B9FEDEB24CDD93C59539E3C6F5DD">
+		<Item class="ModuleScript" referent="RBX4B3AC81CD04E4F03A4D74F92A6685D99">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -1610,7 +1610,7 @@ Public License instead of this License.  But first, please read
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBX6B53D0DF9CEA47EBAB6C08207880080F">
+		<Item class="Folder" referent="RBXE6108A43BD8E45F2B631F2ED5A17EC9D">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<string name="Name">Sound_Storage</string>
@@ -1618,14 +1618,14 @@ Public License instead of this License.  But first, please read
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBXE295D3A48930454DA9F4EA62268B0994">
+		<Item class="Folder" referent="RBXFE5735167F79463AAF25AD88524F09A9">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<string name="Name">Libs</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBX30583622AD224121A7883DA946FA67F7">
+			<Item class="ModuleScript" referent="RBXB94D3D1922C9401B88711AA55A75A755">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1659,7 +1659,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX41CF5D58E551482C9992EC99C0BF223B">
+			<Item class="ModuleScript" referent="RBX813F6F6110714B8F8EEFF0D3826F78BD">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1714,7 +1714,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXB3F75B20670E497CBECB105B8ECF545F">
+			<Item class="ModuleScript" referent="RBX209D0C6327464E9FBF80ACC3C9AB273B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1778,7 +1778,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX535D279F60D241E08752321B195BA548">
+			<Item class="ModuleScript" referent="RBX386A330A31B54D7792E6FA55C3778899">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1820,7 +1820,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX1B9053C1220A436A9C2986BBF8F22AF0">
+			<Item class="ModuleScript" referent="RBX8051578E4C224C708220C0D5BFCB02C6">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1922,7 +1922,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXA320EB76258E4079A89B361A09AB9A5D">
+			<Item class="ModuleScript" referent="RBX218B1BF8A7DB46B38AB56033996DFCD7">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -2051,7 +2051,7 @@ end
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ModuleScript" referent="RBX8A13F2E3B884497084F8DB2D2A027872">
+		<Item class="ModuleScript" referent="RBXFF5A052EA4D14A47948F6E103852B28D">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -6545,7 +6545,7 @@ return DB]]></ProtectedString>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="ModuleScript" referent="RBX7E8CBDD7B62D457E8663B25DFFE83930">
+		<Item class="ModuleScript" referent="RBX314AF6CF402C4589A2D179ED3EA2F451">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -6553,6 +6553,7 @@ return DB]]></ProtectedString>
 				<string name="ScriptGuid">{693545B3-88AE-43D5-A14D-A174B59C12A9}</string>
 				<ProtectedString name="Source"><![CDATA[-- [[Version INSERT INSERT - INSERT]],
 return {
+	[[Version Alpha 0.0.8 - Added binary detection in the require obfuscation detection and some small editions.]],
 	[[Version Alpha 0.0.7 - Made malicious users and malicious groups detection list to ease detection.]],
 	[[Version Alpha 0.0.6 - Made into rojo and maybe did some other changes.]],
 	[[Version Alpha 0.0.5 - Shared alpha testing version. Fixed bugs and changed some enhancements. No UI support I am too lazy.]],
@@ -6566,7 +6567,7 @@ return {
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBX6FBF748F0CC24857BB024423890BCBCB">
+		<Item class="Folder" referent="RBX56C7503494D14129A633D2262FD196A7">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<string name="Name">UI</string>
@@ -6575,14 +6576,14 @@ return {
 			</Properties>
 		</Item>
 	</Item>
-	<Item class="Folder" referent="RBX03FDE2C620A44461AFA7D41609BE1AD8">
+	<Item class="Folder" referent="RBX5D7C3B810DED47B6AB46F787F00A8053">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<string name="Name">Dependancies</string>
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="ModuleScript" referent="RBX312CCB9AF605491BB09EBF766B464194">
+		<Item class="ModuleScript" referent="RBX0B5537F9E83747718D48EACBE255B778">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -6639,7 +6640,7 @@ return Roact]]></ProtectedString>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBXCE9C65CC6D77489BB533E76D5DF6B917">
+			<Item class="ModuleScript" referent="RBX87D2CE8ED64B4FB48533F497E6215DBF">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6713,7 +6714,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX3C5110DC27F643BE948936466B62D39C">
+			<Item class="ModuleScript" referent="RBX24BB88AFD3764F78BD2D05741EEBF610">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6730,7 +6731,7 @@ return None]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX62C209FA99694A538A5F74E346DB3557">
+			<Item class="ModuleScript" referent="RBX17E88C7F3E6941619C494F294487E40B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6770,7 +6771,7 @@ return Symbol]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXE24B2BBFED3E476F8DFC651DFD8068F3">
+			<Item class="ModuleScript" referent="RBX0DB5188F3A744493952F6DA734F0F774">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6818,7 +6819,7 @@ return createRef]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX08204A47A54A499A83C8767EEEE61ADA">
+			<Item class="ModuleScript" referent="RBX7F84230985A94E6AA8265C39D3B5C2A8">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6855,7 +6856,7 @@ return assign]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX809FFAAD9AF3412BA7E5FE7296A5C81C">
+			<Item class="ModuleScript" referent="RBX5416D731D8624CB19416557FFF315F5F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6889,7 +6890,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXF5AF94657A7548FEAB872A8DB3040595">
+			<Item class="ModuleScript" referent="RBX316055E532E342D09D925501E2CAD3FC">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6989,7 +6990,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX78F0B89863A3441FB141F177CB569685">
+			<Item class="ModuleScript" referent="RBX22ED809A2F3F4F2D81338B430C9AC0EE">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -7040,7 +7041,7 @@ return PureComponent]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX95E70AD86C854017A4987263C542A722">
+			<Item class="ModuleScript" referent="RBXE6A0AC46C7F84A7C9DC8AF61F6689CEC">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -7145,7 +7146,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX590BD721D04B408A942B567E23C9C1AF">
+			<Item class="ModuleScript" referent="RBX301ACC4C48144105BAB397DAB81BBFED">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -7199,7 +7200,7 @@ return invalidSetStateMessages]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX375C94C61FC64F1CB5F5DD1046A64F45">
+			<Item class="ModuleScript" referent="RBX1EB37B715D474841B3723D2C08BD3B3E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -7216,7 +7217,7 @@ return Config.new()]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX30694B319CB846349519486A46B81EBD">
+			<Item class="ModuleScript" referent="RBXB7034D73DE04465A9EBBE64F0DC696B6">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8175,7 +8176,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX25BC7BCF72CD429882E7705B5806C0D9">
+			<Item class="ModuleScript" referent="RBX8645665B60A04CFBB177B8DD9270D72D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8344,7 +8345,7 @@ return Logging]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXD30C5D1E02E845A88DEFC2899437E2CC">
+			<Item class="ModuleScript" referent="RBX1E1A48958DE0483AB63EE58FC5A6709B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8436,7 +8437,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXFB55C3D4932742D7B129B3F140A76F74">
+			<Item class="ModuleScript" referent="RBXB56F75B9FBBB4BF9B49DC16C89F8E49B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8451,7 +8452,7 @@ return Portal]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXD42EDE50E64B420D9B16FBF139380F37">
+			<Item class="ModuleScript" referent="RBX27BF83C3EB234CF1A7EAB28568B804D6">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8968,7 +8969,7 @@ return Component]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX1903E79F804848A99D03345EC959D3DB">
+			<Item class="ModuleScript" referent="RBXC6CAD677F7BC48EE9C8480034306DA1A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8999,7 +9000,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX443F0B403BB9488AA75968A5181AAAB1">
+			<Item class="ModuleScript" referent="RBX4C96BA4E7E004E799F146F77F7E0CE24">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9248,7 +9249,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX306AD44972044BAE8A93FAFD147C00DA">
+			<Item class="ModuleScript" referent="RBX8FFEA239CEFF4FA8B3F61A870F175C55">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9265,7 +9266,7 @@ return internalAssert]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX807EDE0515E24B578FE6D02CB43B75BD">
+			<Item class="ModuleScript" referent="RBX1103C180E3C14C06856FACFBD51A7476">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9544,7 +9545,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX36B29A9D51C64B0E8DBABDA631084F5F">
+			<Item class="ModuleScript" referent="RBXC5A9A914EDCD4F0D9B2B469ABDDB1F2D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9605,7 +9606,7 @@ return ElementKind]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXA8677E64C88847869D79C7D44977D21B">
+			<Item class="ModuleScript" referent="RBX3F0AE09ED5A64B16944471DFACB01DEE">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9899,7 +9900,7 @@ return RobloxRenderer
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX011B2FECA3094D60AD0250620901A335">
+			<Item class="ModuleScript" referent="RBX555F24180726464FBA0BCD7596471A73">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9942,7 +9943,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX9B01100C838C4881BE039F832950197C">
+			<Item class="ModuleScript" referent="RBXAB76687912C3458C86E14F875426166A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9979,7 +9980,7 @@ return strict]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX71875ADB337644C39015F359E16E4CBC">
+			<Item class="ModuleScript" referent="RBXBEE2DDDDC4E44FC5A01CD558306D69C6">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -10064,7 +10065,7 @@ return createSignal]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX61527822B40F4737B5273D0D2C639969">
+			<Item class="ModuleScript" referent="RBX6113E11D6FE045E9B731B1AD86BC1BED">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -10400,7 +10401,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX6F008E2FAEB94B39A0574E38899C0312">
+			<Item class="ModuleScript" referent="RBX46F65ABDCF8E4D4285584E530BFBED7E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -10465,14 +10466,14 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="Folder" referent="RBX52869BBD07174DA9B54C01BE66D5761F">
+			<Item class="Folder" referent="RBXB3DDBC2898A54EB6A6436B01D8C053B1">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<string name="Name">Component.spec</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBX07A3A3F3F9BC47C3A0B6AC8D20ADA439">
+				<Item class="ModuleScript" referent="RBX79EA213E116343E28E95D1EFBA2544C9">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -10779,7 +10780,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX695236AA049441A3B9D34956DF6A03D9">
+				<Item class="ModuleScript" referent="RBX56838243A8FB439384623BFBDBD6B991">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11068,7 +11069,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX73039E074F154FE784C1E8AC21FAFFD1">
+				<Item class="ModuleScript" referent="RBXB3DEBF014DA641E48319DBC1E648F63D">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11113,7 +11114,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX91A936601BCD4D8BA2C31DAA676D00DB">
+				<Item class="ModuleScript" referent="RBX3CF4E1DD18B740E4B4A5F08C1F603042">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11152,7 +11153,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXDBB598EED5004583AD9167307313B807">
+				<Item class="ModuleScript" referent="RBXD12F1E20AC494B8EBD09EA75373F5B82">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11229,7 +11230,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXB5E4F2CC6E3246048DB1C73150C65708">
+				<Item class="ModuleScript" referent="RBXECE70124911B48D69DBD7009A7EC7DB7">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11842,7 +11843,7 @@ end
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX1DCA728EEF41494089681D6B01224271">
+				<Item class="ModuleScript" referent="RBX3928031471864414AAD65C71E7D9FA53">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12002,7 +12003,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX825FF3DBFF53464295DA3761411896FD">
+				<Item class="ModuleScript" referent="RBX9DD8EB2191EB4C699A7D083E1BECC7BA">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12105,7 +12106,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX1680E9D37A5D4F8E914304BC366D0D3A">
+				<Item class="ModuleScript" referent="RBX2D0C4BCE54AE426896F2D7C9B419D1E1">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12151,7 +12152,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX9C970F408B4F4F9D9D045118C1BC6098">
+				<Item class="ModuleScript" referent="RBXAF3B04C593254DEA8ACB7F493B6DA59F">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12401,7 +12402,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXC074111269AB4C37A94E1B8EA3F4A32A">
+				<Item class="ModuleScript" referent="RBXB2EA5EC5965F4EC4A85107ABD8F22BA7">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12503,7 +12504,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXAB5D8AE43158481D9A10B48D6E523035">
+				<Item class="ModuleScript" referent="RBXE0121F1BD18D42BC90C12DA68D763790">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12688,7 +12689,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX7015FC44027F4089A8297B48310AF450">
+				<Item class="ModuleScript" referent="RBXD2985134EA1E4D1CB0B72CBE52557437">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12824,7 +12825,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX2B88218A62F24E7A8D7508722EEE81A5">
+				<Item class="ModuleScript" referent="RBX508D02F664AE4AA7A847CF3C7E63AD59">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13043,7 +13044,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX831F536002A24C3CB806914F9EDF284D">
+				<Item class="ModuleScript" referent="RBX2513F6FA01EA408995FB822C7CF27DBA">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13095,7 +13096,7 @@ end]]></ProtectedString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="ModuleScript" referent="RBXE43FA4C12C444828BA8ED0447F68CBBA">
+			<Item class="ModuleScript" referent="RBX81BA142BE9C749B4A839029E0A57AC2A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13157,7 +13158,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX0DD33F49A40B410EA6C0833C2B0BAF5D">
+			<Item class="ModuleScript" referent="RBX356F2B3918A247328D84420D4CFC38A7">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13324,7 +13325,7 @@ return BindingInternalApi]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXEFBDBBD1E5E0455C8E2C630D1C1EA5B3">
+			<Item class="ModuleScript" referent="RBXF669FB5380EC46D5A74A38F7FE898DD6">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13444,7 +13445,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX2C5616FB786641FDB3104C0525BA1ED4">
+			<Item class="ModuleScript" referent="RBX6344A3283E114DBB840018C97212BDFD">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13606,7 +13607,7 @@ return createContext
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX78E059125F0942068A5E490665F5334F">
+			<Item class="ModuleScript" referent="RBXD36B3CE748C84633999E8E5467CE5EE5">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13641,7 +13642,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX911A57695F4E423E9920F82E7C8109B5">
+			<Item class="ModuleScript" referent="RBXCE94D4E95FAB4738B17BB450015FA4B9">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13724,7 +13725,7 @@ return assertDeepEqual]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX44A63ADAEFF94C37943AE342A97F5F69">
+			<Item class="ModuleScript" referent="RBXC5D77E29C4FB4800964B548CB046F97F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13743,14 +13744,14 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="Folder" referent="RBXF815362DE9354EB0B1D9CA655D12325B">
+			<Item class="Folder" referent="RBX50E34CDF3EB64812899F160E1AC3DCFA">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<string name="Name">PropMarkers</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBXDED0ABFA90524501B916CABBB7EB3833">
+				<Item class="ModuleScript" referent="RBX08DCDE19EB89495487091A6A575DD529">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13779,7 +13780,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX995B0A71D5714D56AF8081342E95BAAD">
+				<Item class="ModuleScript" referent="RBX66C47C0330394137BB7A23F1B321836E">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13808,7 +13809,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXC2B439E16A504039A3CF0D187549E6CC">
+				<Item class="ModuleScript" referent="RBXD8A2F515F5CB4F908A0583BC392312E1">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13823,7 +13824,7 @@ return Children]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX135BA6DDE8124C84A342F704A1CC4011">
+				<Item class="ModuleScript" referent="RBXA902087F7BB44D1CB5AD7C7901E6BB48">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13872,7 +13873,7 @@ return Change
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX39DFB4C7276D49D48C6A57A4C41EAA09">
+				<Item class="ModuleScript" referent="RBXE0750112A1B0444F9B7A0068B0E23954">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13924,7 +13925,7 @@ return Event
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX4B1779D0BA87407DBBBAB140650482F1">
+				<Item class="ModuleScript" referent="RBX2F53C00C7EC64686AE0614CD8F30DE15">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13940,7 +13941,7 @@ return Ref]]></ProtectedString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="ModuleScript" referent="RBXDF23B12AF5B945429E1339062E81B1B4">
+			<Item class="ModuleScript" referent="RBXAFE413E750E748A6B3BF9474675275A5">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13969,7 +13970,7 @@ return ComponentLifecyclePhase]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX5DBD8AA4692A437BAF2C621052CE68FA">
+			<Item class="ModuleScript" referent="RBX7ECBAB124CF84512A80A87F0C9A44137">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14078,7 +14079,7 @@ return ElementUtils]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX6E880BE919A241F8AAEA775510654575">
+			<Item class="ModuleScript" referent="RBX272EFCAE54EC43C29DDBDCE0D319BA84">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14116,7 +14117,7 @@ return oneChild]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXEEF0A39E87A2406BA3E4DD03166AD545">
+			<Item class="ModuleScript" referent="RBXA6EFF4BF9A2B471DB2A8EA6ADD404867">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14273,7 +14274,7 @@ return SingleEventManager]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX228030907A2847E8A40C040F33845599">
+			<Item class="ModuleScript" referent="RBX45C026877C254CCA88EB306CE906915D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14587,7 +14588,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXDA56D92FFDB241A6BC5C2232D966369A">
+			<Item class="ModuleScript" referent="RBX00C3C699A6424A6E919303416A041FA3">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14672,7 +14673,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX01F33620C87941DB82F3D817CB34EB58">
+			<Item class="ModuleScript" referent="RBX4953FCFF8C7544FB968B65DA4DB8644A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14736,7 +14737,7 @@ return getDefaultInstanceProperty]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX6D790BEA145D408D9CAC1F36CC904FCB">
+			<Item class="ModuleScript" referent="RBXC424B5CEFD88449E817615C42E4F4661">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14758,7 +14759,7 @@ return createFragment]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX7F039D77C108478EAFB6E3131002930F">
+			<Item class="ModuleScript" referent="RBXFB556967F1A84858A70FDEA6BE6C1E2E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14803,7 +14804,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX6F6076C6A1F84A45A949221DB5278542">
+			<Item class="ModuleScript" referent="RBX632011D3C80D499EA244A0AC7B421B3F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14837,7 +14838,7 @@ return NoopRenderer]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX9E1D1AA73303498183B6CB8F9A0647C4">
+			<Item class="ModuleScript" referent="RBX9634EED1F7AB44CC96174CA9A963243F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14946,7 +14947,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX9AC2AA9F08064D2AAD76B40E144D6C05">
+			<Item class="ModuleScript" referent="RBX130D95A88B6E414EAA693CBEC472774F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15024,7 +15025,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX3064BFFB44E3430CB6D7DDAE9B531449">
+			<Item class="ModuleScript" referent="RBX154F834B7E324A89B66E80CEE4F7944F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15081,7 +15082,7 @@ return createReconcilerCompat]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX824E0C6825F44076B8096A0B4F3792FF">
+			<Item class="ModuleScript" referent="RBX2CEBBD7BE1024C939B5FC1E63C8BF682">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15214,7 +15215,7 @@ return Config]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX4A9B07A5880E42CD9B2CB99E4DB9492F">
+			<Item class="ModuleScript" referent="RBXB5E441664D4F4274B5A233F8D9A83877">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15272,7 +15273,7 @@ return Type]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX94070514E95749B8BDC92B116E0F4EB6">
+			<Item class="ModuleScript" referent="RBX259267465B0D4B18823C735C8944DC49">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15371,7 +15372,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX9617CE7BB5A94C3EACC86BEE73CC2B86">
+			<Item class="ModuleScript" referent="RBX7D3AA065CF354FCABCA4591A3CDA071D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15466,7 +15467,7 @@ return createSpy]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXD7AF877604324902BEF86A0ACB95D249">
+			<Item class="ModuleScript" referent="RBXCBACDC7308BF41D3A0701FDD3A297C38">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15500,7 +15501,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX629CC4B34C7A4B148A5203F9F3DB5C9A">
+			<Item class="ModuleScript" referent="RBXE844AB48800A4CC3AC799A1491F5C348">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15564,7 +15565,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX484A578C8A5A4A90ACDB43EBC94A8424">
+			<Item class="ModuleScript" referent="RBX3216BF9A2F584B77B662B5BB7B87A672">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -16031,7 +16032,7 @@ return createReconciler
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXC7896A04374B41449C8809DC2872FF7F">
+			<Item class="ModuleScript" referent="RBX6DE23590F4EA4C12A35F47E00DBC3F4B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -16116,7 +16117,7 @@ return createElement]]></ProtectedString>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ModuleScript" referent="RBXD61AE6E0036F4065BA65B6DB0687B94E">
+		<Item class="ModuleScript" referent="RBX1976CC9415FC4B769E8AF494B09614A5">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -17480,7 +17481,7 @@ return sha]]></ProtectedString>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBX269BEAC93D9845CABAA95A46F0C9DF53">
+			<Item class="ModuleScript" referent="RBXD1A0D5F3AE7E4DB3AD0417FBD5276EE7">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17624,7 +17625,7 @@ return Base64]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXDA3AC21E9E4B4D86B01D187E6D11918B">
+			<Item class="ModuleScript" referent="RBXD809311FEE5D4E249BEE997A247EBA8D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17670,7 +17671,7 @@ end]]></ProtectedString>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ModuleScript" referent="RBX7AD6E19A670D49549CC7204124BE0CA4">
+		<Item class="ModuleScript" referent="RBX5BEA3953FE164333933B0F9FA62A2ED2">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -17692,7 +17693,7 @@ return {
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBXB21D590DCC544661AE6626FF607BF30B">
+			<Item class="ModuleScript" referent="RBXD678F59F454F4B93961CF6AE5022B575">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17719,7 +17720,7 @@ return join]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXFDE85F097C8947699272D4920DC15516">
+			<Item class="ModuleScript" referent="RBX9E935A824C5043F0825E553AFB8FFF3D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17774,7 +17775,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX20CA94108C8542179452E5CFC1C4FD2C">
+			<Item class="ModuleScript" referent="RBX48AAD372A22E49AC9A433C89FDC0E499">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17787,7 +17788,7 @@ return Symbol.named("RoduxStore")]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX024493A577B9444E96B2209087FDA053">
+			<Item class="ModuleScript" referent="RBX7FEEEE46247C4CBD909AE1ECA1459B3A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18150,7 +18151,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX98DE40B3F3744CE48671002468B7C918">
+			<Item class="ModuleScript" referent="RBX29AD6607D649477D80FDEE67B91FC7A2">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18222,7 +18223,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXAB1F36FE6CC54D86864E1CD39C3D4435">
+			<Item class="ModuleScript" referent="RBX826BB2921E5A4F019E3F6329F2AC189E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18433,7 +18434,7 @@ return connect]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXE05D68528D2043B6B234A3F749E91518">
+			<Item class="ModuleScript" referent="RBX613BB87143C0497A8C1426690492477F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18447,7 +18448,7 @@ return connect]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX825DA43A3C52418C8CD899B8B375D224">
+			<Item class="ModuleScript" referent="RBX46CE6457C8F1457A8652F797B2937D7A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18500,7 +18501,7 @@ return Symbol]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX29A27BB66E9C4BA6B5EA196B2D8EC0CF">
+			<Item class="ModuleScript" referent="RBX127CD5DC08A24142A616E9F00164CFC9">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18517,7 +18518,7 @@ return getStore]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXE2C9A77CECF64A18A7CE3C29C5E822B4">
+			<Item class="ModuleScript" referent="RBX33D25F8B0E5744E78B6815E9AC80CC42">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18572,7 +18573,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX73713E12773043AC824A456B5CB9D541">
+			<Item class="ModuleScript" referent="RBXE9F4559557394DA7B6D68762E4C0991B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18612,7 +18613,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX5C543C49088E4C0A8A819CE822BA9E9C">
+			<Item class="ModuleScript" referent="RBX9B82298C52FA473580CAB6CCA4B4A324">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18645,7 +18646,7 @@ return shallowEqual]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX0DE243504C234805B5B96259E920155A">
+			<Item class="ModuleScript" referent="RBX210CE978B0A24269B62DD279E0296658">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18677,7 +18678,7 @@ return StoreProvider]]></ProtectedString>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ModuleScript" referent="RBX160A906B7EFC4335B6BA8C7E3DE1CED5">
+		<Item class="ModuleScript" referent="RBXBCCB1F4B9819425B8D6A2898BD25F41D">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -18700,7 +18701,7 @@ return {
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBX494384125A514D629AC0C916C602255D">
+			<Item class="ModuleScript" referent="RBX5A71DD6D81C144E29B47149BE973EA7B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18739,7 +18740,7 @@ return NoYield]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX2DC017F920184ECFB0CF405E4317D3E3">
+			<Item class="ModuleScript" referent="RBX2A42CF757B214A54A9CA05A47208F4A2">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18824,7 +18825,7 @@ return Signal]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX50D26436B6D341E98A4293FBA87238DF">
+			<Item class="ModuleScript" referent="RBX4AB651E4879D434BA1C8EED08AC2EB83">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18966,7 +18967,7 @@ return Store
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXAC8F9C23BF504D7DB6058FE7445EC737">
+			<Item class="ModuleScript" referent="RBXA066E24AA660472EB2D4E187664E3184">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18999,7 +19000,7 @@ return combineReducers
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX043D02255CB6494997A748847BD9A69D">
+			<Item class="ModuleScript" referent="RBXFFEB2A392AED4FFEA41B29AA4DA59BC5">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -19025,7 +19026,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX8BF18389AAA1462AB756F5A703BE4F85">
+			<Item class="ModuleScript" referent="RBX0857E9C88CA743D489BC7BF67FEA077E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -19091,7 +19092,7 @@ return loggerMiddleware
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX31568C16B6C1462DA839A2BE93785D2A">
+			<Item class="ModuleScript" referent="RBX9A4BE32F9FD74ED49B6E89D2A7DCB33D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
