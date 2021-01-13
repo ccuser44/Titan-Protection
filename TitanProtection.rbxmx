@@ -1,14 +1,14 @@
 <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX302AB90C88574F1AA844865DF7D0FD00">
+	<Item class="Folder" referent="RBXD15C939687844BA0B974E907477C67FF">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<string name="Name">|| Titan Protection ||</string>
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Script" referent="RBX640BD68DF92D49A68AF465CC981E218C">
+		<Item class="Script" referent="RBX2AF5497CE297467293FB65DEEE763660">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<bool name="Disabled">false</bool>
@@ -17,7 +17,7 @@
 				<string name="ScriptGuid">{9B84F623-D0A3-4174-86FE-36680B577EAF}</string>
 				<ProtectedString name="Source"><![CDATA[--[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  Swan Airways
+    Copyright © 2020  ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -43,7 +43,7 @@
 
 ]]
 
-local Current_Version = "Alpha 0.0.4"
+local Current_Version = "Alpha 0.0.9"
 
 -----------------
 --| Lua Check |--
@@ -857,7 +857,7 @@ local function init()
 		if LibrariesContainer and DB then
 			Running = true
 			InsertPluginHashes()
-			OldPrint([[[Ti-Protection]: Titan Protection  Copyright © 2020  Swan Airways
+			OldPrint([[[Ti-Protection]: Titan Protection  Copyright © 2020  ccuser44 (ALE111_boiPNG)
     This program comes with ABSOLUTELY NO WARRANTY; for details see the `LISENCE' file inside the plugin folder.
     This is free software, and you are welcome to redistribute it
     under certain conditions; for details see the `LISENCE' file inside the plugin folder.]])
@@ -914,25 +914,26 @@ end
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="ModuleScript" referent="RBX70144C587B914A56B3D68E963D25F443">
+		<Item class="ModuleScript" referent="RBX896B6053B1EA49338930562607AAAB19">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">LISENCE</string>
 				<string name="ScriptGuid">{C1ABA61E-E065-448A-9F01-7A001FB786D7}</string>
-				<ProtectedString name="Source"><![CDATA[GNU GENERAL PUBLIC LICENSE
-   Version 3, 29 June 2007
+				<ProtectedString name="Source"><![CDATA[--[[
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
 
-Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
 
-        Preamble
+                            Preamble
 
-The GNU General Public License is a free, copyleft license for
+  The GNU General Public License is a free, copyleft license for
 software and other kinds of works.
 
-The licenses for most software and other practical works are designed
+  The licenses for most software and other practical works are designed
 to take away your freedom to share and change the works.  By contrast,
 the GNU General Public License is intended to guarantee your freedom to
 share and change all versions of a program--to make sure it remains free
@@ -941,35 +942,35 @@ GNU General Public License for most of our software; it applies also to
 any other work released this way by its authors.  You can apply it to
 your programs, too.
 
-When we speak of free software, we are referring to freedom, not
+  When we speak of free software, we are referring to freedom, not
 price.  Our General Public Licenses are designed to make sure that you
 have the freedom to distribute copies of free software (and charge for
 them if you wish), that you receive source code or can get it if you
 want it, that you can change the software or use pieces of it in new
 free programs, and that you know you can do these things.
 
-To protect your rights, we need to prevent others from denying you
+  To protect your rights, we need to prevent others from denying you
 these rights or asking you to surrender the rights.  Therefore, you have
 certain responsibilities if you distribute copies of the software, or if
 you modify it: responsibilities to respect the freedom of others.
 
-For example, if you distribute copies of such a program, whether
+  For example, if you distribute copies of such a program, whether
 gratis or for a fee, you must pass on to the recipients the same
 freedoms that you received.  You must make sure that they, too, receive
 or can get the source code.  And you must show them these terms so they
 know their rights.
 
-Developers that use the GNU GPL protect your rights with two steps:
+  Developers that use the GNU GPL protect your rights with two steps:
 (1) assert copyright on the software, and (2) offer you this License
 giving you legal permission to copy, distribute and/or modify it.
 
-For the developers' and authors' protection, the GPL clearly explains
+  For the developers' and authors' protection, the GPL clearly explains
 that there is no warranty for this free software.  For both users' and
 authors' sake, the GPL requires that modified versions be marked as
 changed, so that their problems will not be attributed erroneously to
 authors of previous versions.
 
-Some devices are designed to deny users access to install or run
+  Some devices are designed to deny users access to install or run
 modified versions of the software inside them, although the manufacturer
 can do so.  This is fundamentally incompatible with the aim of
 protecting users' freedom to change the software.  The systematic
@@ -980,49 +981,49 @@ products.  If such problems arise substantially in other domains, we
 stand ready to extend this provision to those domains in future versions
 of the GPL, as needed to protect the freedom of users.
 
-Finally, every program is threatened constantly by software patents.
+  Finally, every program is threatened constantly by software patents.
 States should not allow patents to restrict development and use of
 software on general-purpose computers, but in those that do, we wish to
 avoid the special danger that patents applied to a free program could
 make it effectively proprietary.  To prevent this, the GPL assures that
 patents cannot be used to render the program non-free.
 
-The precise terms and conditions for copying, distribution and
+  The precise terms and conditions for copying, distribution and
 modification follow.
 
-   TERMS AND CONDITIONS
+                       TERMS AND CONDITIONS
 
-0. Definitions.
+  0. Definitions.
 
-"This License" refers to version 3 of the GNU General Public License.
+  "This License" refers to version 3 of the GNU General Public License.
 
-"Copyright" also means copyright-like laws that apply to other kinds of
+  "Copyright" also means copyright-like laws that apply to other kinds of
 works, such as semiconductor masks.
 
-"The Program" refers to any copyrightable work licensed under this
+  "The Program" refers to any copyrightable work licensed under this
 License.  Each licensee is addressed as "you".  "Licensees" and
 "recipients" may be individuals or organizations.
 
-To "modify" a work means to copy from or adapt all or part of the work
+  To "modify" a work means to copy from or adapt all or part of the work
 in a fashion requiring copyright permission, other than the making of an
 exact copy.  The resulting work is called a "modified version" of the
 earlier work or a work "based on" the earlier work.
 
-A "covered work" means either the unmodified Program or a work based
+  A "covered work" means either the unmodified Program or a work based
 on the Program.
 
-To "propagate" a work means to do anything with it that, without
+  To "propagate" a work means to do anything with it that, without
 permission, would make you directly or secondarily liable for
 infringement under applicable copyright law, except executing it on a
 computer or modifying a private copy.  Propagation includes copying,
 distribution (with or without modification), making available to the
 public, and in some countries other activities as well.
 
-To "convey" a work means any kind of propagation that enables other
+  To "convey" a work means any kind of propagation that enables other
 parties to make or receive copies.  Mere interaction with a user through
 a computer network, with no transfer of a copy, is not conveying.
 
-An interactive user interface displays "Appropriate Legal Notices"
+  An interactive user interface displays "Appropriate Legal Notices"
 to the extent that it includes a convenient and prominently visible
 feature that (1) displays an appropriate copyright notice, and (2)
 tells the user that there is no warranty for the work (except to the
@@ -1031,18 +1032,18 @@ work under this License, and how to view a copy of this License.  If
 the interface presents a list of user commands or options, such as a
 menu, a prominent item in the list meets this criterion.
 
-1. Source Code.
+  1. Source Code.
 
-The "source code" for a work means the preferred form of the work
+  The "source code" for a work means the preferred form of the work
 for making modifications to it.  "Object code" means any non-source
 form of a work.
 
-A "Standard Interface" means an interface that either is an official
+  A "Standard Interface" means an interface that either is an official
 standard defined by a recognized standards body, or, in the case of
 interfaces specified for a particular programming language, one that
 is widely used among developers working in that language.
 
-The "System Libraries" of an executable work include anything, other
+  The "System Libraries" of an executable work include anything, other
 than the work as a whole, that (a) is included in the normal form of
 packaging a Major Component, but which is not part of that Major
 Component, and (b) serves only to enable use of the work with that
@@ -1053,7 +1054,7 @@ implementation is available to the public in source code form.  A
 (if any) on which the executable work runs, or a compiler used to
 produce the work, or an object code interpreter used to run it.
 
-The "Corresponding Source" for a work in object code form means all
+  The "Corresponding Source" for a work in object code form means all
 the source code needed to generate, install, and (for an executable
 work) run the object code and to modify the work, including scripts to
 control those activities.  However, it does not include the work's
@@ -1066,16 +1067,16 @@ linked subprograms that the work is specifically designed to require,
 such as by intimate data communication or control flow between those
 subprograms and other parts of the work.
 
-The Corresponding Source need not include anything that users
+  The Corresponding Source need not include anything that users
 can regenerate automatically from other parts of the Corresponding
 Source.
 
-The Corresponding Source for a work in source code form is that
+  The Corresponding Source for a work in source code form is that
 same work.
 
-2. Basic Permissions.
+  2. Basic Permissions.
 
-All rights granted under this License are granted for the term of
+  All rights granted under this License are granted for the term of
 copyright on the Program, and are irrevocable provided the stated
 conditions are met.  This License explicitly affirms your unlimited
 permission to run the unmodified Program.  The output from running a
@@ -1083,7 +1084,7 @@ covered work is covered by this License only if the output, given its
 content, constitutes a covered work.  This License acknowledges your
 rights of fair use or other equivalent, as provided by copyright law.
 
-You may make, run and propagate covered works that you do not
+  You may make, run and propagate covered works that you do not
 convey, without conditions so long as your license otherwise remains
 in force.  You may convey covered works to others for the sole purpose
 of having them make modifications exclusively for you, or provide you
@@ -1094,19 +1095,19 @@ for you must do so exclusively on your behalf, under your direction
 and control, on terms that prohibit them from making any copies of
 your copyrighted material outside their relationship with you.
 
-Conveying under any other circumstances is permitted solely under
+  Conveying under any other circumstances is permitted solely under
 the conditions stated below.  Sublicensing is not allowed; section 10
 makes it unnecessary.
 
-3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
 
-No covered work shall be deemed part of an effective technological
+  No covered work shall be deemed part of an effective technological
 measure under any applicable law fulfilling obligations under article
 11 of the WIPO copyright treaty adopted on 20 December 1996, or
 similar laws prohibiting or restricting circumvention of such
 measures.
 
-When you convey a covered work, you waive any legal power to forbid
+  When you convey a covered work, you waive any legal power to forbid
 circumvention of technological measures to the extent such circumvention
 is effected by exercising rights under this License with respect to
 the covered work, and you disclaim any intention to limit operation or
@@ -1114,9 +1115,9 @@ modification of the work as a means of enforcing, against the work's
 users, your or third parties' legal rights to forbid circumvention of
 technological measures.
 
-4. Conveying Verbatim Copies.
+  4. Conveying Verbatim Copies.
 
-You may convey verbatim copies of the Program's source code as you
+  You may convey verbatim copies of the Program's source code as you
 receive it, in any medium, provided that you conspicuously and
 appropriately publish on each copy an appropriate copyright notice;
 keep intact all notices stating that this License and any
@@ -1124,37 +1125,37 @@ non-permissive terms added in accord with section 7 apply to the code;
 keep intact all notices of the absence of any warranty; and give all
 recipients a copy of this License along with the Program.
 
-You may charge any price or no price for each copy that you convey,
+  You may charge any price or no price for each copy that you convey,
 and you may offer support or warranty protection for a fee.
 
-5. Conveying Modified Source Versions.
+  5. Conveying Modified Source Versions.
 
-You may convey a work based on the Program, or the modifications to
+  You may convey a work based on the Program, or the modifications to
 produce it from the Program, in the form of source code under the
 terms of section 4, provided that you also meet all of these conditions:
 
-a) The work must carry prominent notices stating that you modified
-it, and giving a relevant date.
+    a) The work must carry prominent notices stating that you modified
+    it, and giving a relevant date.
 
-b) The work must carry prominent notices stating that it is
-released under this License and any conditions added under section
-7.  This requirement modifies the requirement in section 4 to
-"keep intact all notices".
+    b) The work must carry prominent notices stating that it is
+    released under this License and any conditions added under section
+    7.  This requirement modifies the requirement in section 4 to
+    "keep intact all notices".
 
-c) You must license the entire work, as a whole, under this
-License to anyone who comes into possession of a copy.  This
-License will therefore apply, along with any applicable section 7
-additional terms, to the whole of the work, and all its parts,
-regardless of how they are packaged.  This License gives no
-permission to license the work in any other way, but it does not
-invalidate such permission if you have separately received it.
+    c) You must license the entire work, as a whole, under this
+    License to anyone who comes into possession of a copy.  This
+    License will therefore apply, along with any applicable section 7
+    additional terms, to the whole of the work, and all its parts,
+    regardless of how they are packaged.  This License gives no
+    permission to license the work in any other way, but it does not
+    invalidate such permission if you have separately received it.
 
-d) If the work has interactive user interfaces, each must display
-Appropriate Legal Notices; however, if the Program has interactive
-interfaces that do not display Appropriate Legal Notices, your
-work need not make them do so.
+    d) If the work has interactive user interfaces, each must display
+    Appropriate Legal Notices; however, if the Program has interactive
+    interfaces that do not display Appropriate Legal Notices, your
+    work need not make them do so.
 
-A compilation of a covered work with other separate and independent
+  A compilation of a covered work with other separate and independent
 works, which are not by their nature extensions of the covered work,
 and which are not combined with it such as to form a larger program,
 in or on a volume of a storage or distribution medium, is called an
@@ -1164,59 +1165,59 @@ beyond what the individual works permit.  Inclusion of a covered work
 in an aggregate does not cause this License to apply to the other
 parts of the aggregate.
 
-6. Conveying Non-Source Forms.
+  6. Conveying Non-Source Forms.
 
-You may convey a covered work in object code form under the terms
+  You may convey a covered work in object code form under the terms
 of sections 4 and 5, provided that you also convey the
 machine-readable Corresponding Source under the terms of this License,
 in one of these ways:
 
-a) Convey the object code in, or embodied in, a physical product
-(including a physical distribution medium), accompanied by the
-Corresponding Source fixed on a durable physical medium
-customarily used for software interchange.
+    a) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by the
+    Corresponding Source fixed on a durable physical medium
+    customarily used for software interchange.
 
-b) Convey the object code in, or embodied in, a physical product
-(including a physical distribution medium), accompanied by a
-written offer, valid for at least three years and valid for as
-long as you offer spare parts or customer support for that product
-model, to give anyone who possesses the object code either (1) a
-copy of the Corresponding Source for all the software in the
-product that is covered by this License, on a durable physical
-medium customarily used for software interchange, for a price no
-more than your reasonable cost of physically performing this
-conveying of source, or (2) access to copy the
-Corresponding Source from a network server at no charge.
+    b) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by a
+    written offer, valid for at least three years and valid for as
+    long as you offer spare parts or customer support for that product
+    model, to give anyone who possesses the object code either (1) a
+    copy of the Corresponding Source for all the software in the
+    product that is covered by this License, on a durable physical
+    medium customarily used for software interchange, for a price no
+    more than your reasonable cost of physically performing this
+    conveying of source, or (2) access to copy the
+    Corresponding Source from a network server at no charge.
 
-c) Convey individual copies of the object code with a copy of the
-written offer to provide the Corresponding Source.  This
-alternative is allowed only occasionally and noncommercially, and
-only if you received the object code with such an offer, in accord
-with subsection 6b.
+    c) Convey individual copies of the object code with a copy of the
+    written offer to provide the Corresponding Source.  This
+    alternative is allowed only occasionally and noncommercially, and
+    only if you received the object code with such an offer, in accord
+    with subsection 6b.
 
-d) Convey the object code by offering access from a designated
-place (gratis or for a charge), and offer equivalent access to the
-Corresponding Source in the same way through the same place at no
-further charge.  You need not require recipients to copy the
-Corresponding Source along with the object code.  If the place to
-copy the object code is a network server, the Corresponding Source
-may be on a different server (operated by you or a third party)
-that supports equivalent copying facilities, provided you maintain
-clear directions next to the object code saying where to find the
-Corresponding Source.  Regardless of what server hosts the
-Corresponding Source, you remain obligated to ensure that it is
-available for as long as needed to satisfy these requirements.
+    d) Convey the object code by offering access from a designated
+    place (gratis or for a charge), and offer equivalent access to the
+    Corresponding Source in the same way through the same place at no
+    further charge.  You need not require recipients to copy the
+    Corresponding Source along with the object code.  If the place to
+    copy the object code is a network server, the Corresponding Source
+    may be on a different server (operated by you or a third party)
+    that supports equivalent copying facilities, provided you maintain
+    clear directions next to the object code saying where to find the
+    Corresponding Source.  Regardless of what server hosts the
+    Corresponding Source, you remain obligated to ensure that it is
+    available for as long as needed to satisfy these requirements.
 
-e) Convey the object code using peer-to-peer transmission, provided
-you inform other peers where the object code and Corresponding
-Source of the work are being offered to the general public at no
-charge under subsection 6d.
+    e) Convey the object code using peer-to-peer transmission, provided
+    you inform other peers where the object code and Corresponding
+    Source of the work are being offered to the general public at no
+    charge under subsection 6d.
 
-A separable portion of the object code, whose source code is excluded
+  A separable portion of the object code, whose source code is excluded
 from the Corresponding Source as a System Library, need not be
 included in conveying the object code work.
 
-A "User Product" is either (1) a "consumer product", which means any
+  A "User Product" is either (1) a "consumer product", which means any
 tangible personal property which is normally used for personal, family,
 or household purposes, or (2) anything designed or sold for incorporation
 into a dwelling.  In determining whether a product is a consumer product,
@@ -1229,7 +1230,7 @@ is a consumer product regardless of whether the product has substantial
 commercial, industrial or non-consumer uses, unless such uses represent
 the only significant mode of use of the product.
 
-"Installation Information" for a User Product means any methods,
+  "Installation Information" for a User Product means any methods,
 procedures, authorization keys, or other information required to install
 and execute modified versions of a covered work in that User Product from
 a modified version of its Corresponding Source.  The information must
@@ -1237,7 +1238,7 @@ suffice to ensure that the continued functioning of the modified object
 code is in no case prevented or interfered with solely because
 modification has been made.
 
-If you convey an object code work under this section in, or with, or
+  If you convey an object code work under this section in, or with, or
 specifically for use in, a User Product, and the conveying occurs as
 part of a transaction in which the right of possession and use of the
 User Product is transferred to the recipient in perpetuity or for a
@@ -1248,7 +1249,7 @@ if neither you nor any third party retains the ability to install
 modified object code on the User Product (for example, the work has
 been installed in ROM).
 
-The requirement to provide Installation Information does not include a
+  The requirement to provide Installation Information does not include a
 requirement to continue to provide support service, warranty, or updates
 for a work that has been modified or installed by the recipient, or for
 the User Product in which it has been modified or installed.  Access to a
@@ -1256,15 +1257,15 @@ network may be denied when the modification itself materially and
 adversely affects the operation of the network or violates the rules and
 protocols for communication across the network.
 
-Corresponding Source conveyed, and Installation Information provided,
+  Corresponding Source conveyed, and Installation Information provided,
 in accord with this section must be in a format that is publicly
 documented (and with an implementation available to the public in
 source code form), and must require no special password or key for
 unpacking, reading or copying.
 
-7. Additional Terms.
+  7. Additional Terms.
 
-"Additional permissions" are terms that supplement the terms of this
+  "Additional permissions" are terms that supplement the terms of this
 License by making exceptions from one or more of its conditions.
 Additional permissions that are applicable to the entire Program shall
 be treated as though they were included in this License, to the extent
@@ -1273,41 +1274,41 @@ apply only to part of the Program, that part may be used separately
 under those permissions, but the entire Program remains governed by
 this License without regard to the additional permissions.
 
-When you convey a copy of a covered work, you may at your option
+  When you convey a copy of a covered work, you may at your option
 remove any additional permissions from that copy, or from any part of
 it.  (Additional permissions may be written to require their own
 removal in certain cases when you modify the work.)  You may place
 additional permissions on material, added by you to a covered work,
 for which you have or can give appropriate copyright permission.
 
-Notwithstanding any other provision of this License, for material you
+  Notwithstanding any other provision of this License, for material you
 add to a covered work, you may (if authorized by the copyright holders of
 that material) supplement the terms of this License with terms:
 
-a) Disclaiming warranty or limiting liability differently from the
-terms of sections 15 and 16 of this License; or
+    a) Disclaiming warranty or limiting liability differently from the
+    terms of sections 15 and 16 of this License; or
 
-b) Requiring preservation of specified reasonable legal notices or
-author attributions in that material or in the Appropriate Legal
-Notices displayed by works containing it; or
+    b) Requiring preservation of specified reasonable legal notices or
+    author attributions in that material or in the Appropriate Legal
+    Notices displayed by works containing it; or
 
-c) Prohibiting misrepresentation of the origin of that material, or
-requiring that modified versions of such material be marked in
-reasonable ways as different from the original version; or
+    c) Prohibiting misrepresentation of the origin of that material, or
+    requiring that modified versions of such material be marked in
+    reasonable ways as different from the original version; or
 
-d) Limiting the use for publicity purposes of names of licensors or
-authors of the material; or
+    d) Limiting the use for publicity purposes of names of licensors or
+    authors of the material; or
 
-e) Declining to grant rights under trademark law for use of some
-trade names, trademarks, or service marks; or
+    e) Declining to grant rights under trademark law for use of some
+    trade names, trademarks, or service marks; or
 
-f) Requiring indemnification of licensors and authors of that
-material by anyone who conveys the material (or modified versions of
-it) with contractual assumptions of liability to the recipient, for
-any liability that these contractual assumptions directly impose on
-those licensors and authors.
+    f) Requiring indemnification of licensors and authors of that
+    material by anyone who conveys the material (or modified versions of
+    it) with contractual assumptions of liability to the recipient, for
+    any liability that these contractual assumptions directly impose on
+    those licensors and authors.
 
-All other non-permissive additional terms are considered "further
+  All other non-permissive additional terms are considered "further
 restrictions" within the meaning of section 10.  If the Program as you
 received it, or any part of it, contains a notice stating that it is
 governed by this License along with a term that is a further
@@ -1317,46 +1318,46 @@ License, you may add to a covered work material governed by the terms
 of that license document, provided that the further restriction does
 not survive such relicensing or conveying.
 
-If you add terms to a covered work in accord with this section, you
+  If you add terms to a covered work in accord with this section, you
 must place, in the relevant source files, a statement of the
 additional terms that apply to those files, or a notice indicating
 where to find the applicable terms.
 
-Additional terms, permissive or non-permissive, may be stated in the
+  Additional terms, permissive or non-permissive, may be stated in the
 form of a separately written license, or stated as exceptions;
 the above requirements apply either way.
 
-8. Termination.
+  8. Termination.
 
-You may not propagate or modify a covered work except as expressly
+  You may not propagate or modify a covered work except as expressly
 provided under this License.  Any attempt otherwise to propagate or
 modify it is void, and will automatically terminate your rights under
 this License (including any patent licenses granted under the third
 paragraph of section 11).
 
-However, if you cease all violation of this License, then your
+  However, if you cease all violation of this License, then your
 license from a particular copyright holder is reinstated (a)
 provisionally, unless and until the copyright holder explicitly and
 finally terminates your license, and (b) permanently, if the copyright
 holder fails to notify you of the violation by some reasonable means
 prior to 60 days after the cessation.
 
-Moreover, your license from a particular copyright holder is
+  Moreover, your license from a particular copyright holder is
 reinstated permanently if the copyright holder notifies you of the
 violation by some reasonable means, this is the first time you have
 received notice of violation of this License (for any work) from that
 copyright holder, and you cure the violation prior to 30 days after
 your receipt of the notice.
 
-Termination of your rights under this section does not terminate the
+  Termination of your rights under this section does not terminate the
 licenses of parties who have received copies or rights from you under
 this License.  If your rights have been terminated and not permanently
 reinstated, you do not qualify to receive new licenses for the same
 material under section 10.
 
-9. Acceptance Not Required for Having Copies.
+  9. Acceptance Not Required for Having Copies.
 
-You are not required to accept this License in order to receive or
+  You are not required to accept this License in order to receive or
 run a copy of the Program.  Ancillary propagation of a covered work
 occurring solely as a consequence of using peer-to-peer transmission
 to receive a copy likewise does not require acceptance.  However,
@@ -1365,14 +1366,14 @@ modify any covered work.  These actions infringe copyright if you do
 not accept this License.  Therefore, by modifying or propagating a
 covered work, you indicate your acceptance of this License to do so.
 
-10. Automatic Licensing of Downstream Recipients.
+  10. Automatic Licensing of Downstream Recipients.
 
-Each time you convey a covered work, the recipient automatically
+  Each time you convey a covered work, the recipient automatically
 receives a license from the original licensors, to run, modify and
 propagate that work, subject to this License.  You are not responsible
 for enforcing compliance by third parties with this License.
 
-An "entity transaction" is a transaction transferring control of an
+  An "entity transaction" is a transaction transferring control of an
 organization, or substantially all assets of one, or subdividing an
 organization, or merging organizations.  If propagation of a covered
 work results from an entity transaction, each party to that
@@ -1382,7 +1383,7 @@ give under the previous paragraph, plus a right to possession of the
 Corresponding Source of the work from the predecessor in interest, if
 the predecessor has it or can get it with reasonable efforts.
 
-You may not impose any further restrictions on the exercise of the
+  You may not impose any further restrictions on the exercise of the
 rights granted or affirmed under this License.  For example, you may
 not impose a license fee, royalty, or other charge for exercise of
 rights granted under this License, and you may not initiate litigation
@@ -1390,13 +1391,13 @@ rights granted under this License, and you may not initiate litigation
 any patent claim is infringed by making, using, selling, offering for
 sale, or importing the Program or any portion of it.
 
-11. Patents.
+  11. Patents.
 
-A "contributor" is a copyright holder who authorizes use under this
+  A "contributor" is a copyright holder who authorizes use under this
 License of the Program or a work on which the Program is based.  The
 work thus licensed is called the contributor's "contributor version".
 
-A contributor's "essential patent claims" are all patent claims
+  A contributor's "essential patent claims" are all patent claims
 owned or controlled by the contributor, whether already acquired or
 hereafter acquired, that would be infringed by some manner, permitted
 by this License, of making, using, or selling its contributor version,
@@ -1406,19 +1407,19 @@ purposes of this definition, "control" includes the right to grant
 patent sublicenses in a manner consistent with the requirements of
 this License.
 
-Each contributor grants you a non-exclusive, worldwide, royalty-free
+  Each contributor grants you a non-exclusive, worldwide, royalty-free
 patent license under the contributor's essential patent claims, to
 make, use, sell, offer for sale, import and otherwise run, modify and
 propagate the contents of its contributor version.
 
-In the following three paragraphs, a "patent license" is any express
+  In the following three paragraphs, a "patent license" is any express
 agreement or commitment, however denominated, not to enforce a patent
 (such as an express permission to practice a patent or covenant not to
 sue for patent infringement).  To "grant" such a patent license to a
 party means to make such an agreement or commitment not to enforce a
 patent against the party.
 
-If you convey a covered work, knowingly relying on a patent license,
+  If you convey a covered work, knowingly relying on a patent license,
 and the Corresponding Source of the work is not available for anyone
 to copy, free of charge and under the terms of this License, through a
 publicly available network server or other readily accessible means,
@@ -1432,7 +1433,7 @@ covered work in a country, or your recipient's use of the covered work
 in a country, would infringe one or more identifiable patents in that
 country that you have reason to believe are valid.
 
-If, pursuant to or in connection with a single transaction or
+  If, pursuant to or in connection with a single transaction or
 arrangement, you convey, or propagate by procuring conveyance of, a
 covered work, and grant a patent license to some of the parties
 receiving the covered work authorizing them to use, propagate, modify
@@ -1440,7 +1441,7 @@ or convey a specific copy of the covered work, then the patent license
 you grant is automatically extended to all recipients of the covered
 work and works based on it.
 
-A patent license is "discriminatory" if it does not include within
+  A patent license is "discriminatory" if it does not include within
 the scope of its coverage, prohibits the exercise of, or is
 conditioned on the non-exercise of one or more of the rights that are
 specifically granted under this License.  You may not convey a covered
@@ -1455,13 +1456,13 @@ for and in connection with specific products or compilations that
 contain the covered work, unless you entered into that arrangement,
 or that patent license was granted, prior to 28 March 2007.
 
-Nothing in this License shall be construed as excluding or limiting
+  Nothing in this License shall be construed as excluding or limiting
 any implied license or other defenses to infringement that may
 otherwise be available to you under applicable patent law.
 
-12. No Surrender of Others' Freedom.
+  12. No Surrender of Others' Freedom.
 
-If conditions are imposed on you (whether by court order, agreement or
+  If conditions are imposed on you (whether by court order, agreement or
 otherwise) that contradict the conditions of this License, they do not
 excuse you from the conditions of this License.  If you cannot convey a
 covered work so as to satisfy simultaneously your obligations under this
@@ -1471,9 +1472,9 @@ to collect a royalty for further conveying from those to whom you convey
 the Program, the only way you could satisfy both those terms and this
 License would be to refrain entirely from conveying the Program.
 
-13. Use with the GNU Affero General Public License.
+  13. Use with the GNU Affero General Public License.
 
-Notwithstanding any other provision of this License, you have
+  Notwithstanding any other provision of this License, you have
 permission to link or combine any covered work with a work licensed
 under version 3 of the GNU Affero General Public License into a single
 combined work, and to convey the resulting work.  The terms of this
@@ -1482,14 +1483,14 @@ but the special requirements of the GNU Affero General Public License,
 section 13, concerning interaction through a network will apply to the
 combination as such.
 
-14. Revised Versions of this License.
+  14. Revised Versions of this License.
 
-The Free Software Foundation may publish revised and/or new versions of
+  The Free Software Foundation may publish revised and/or new versions of
 the GNU General Public License from time to time.  Such new versions will
 be similar in spirit to the present version, but may differ in detail to
 address new problems or concerns.
 
-Each version is given a distinguishing version number.  If the
+  Each version is given a distinguishing version number.  If the
 Program specifies that a certain numbered version of the GNU General
 Public License "or any later version" applies to it, you have the
 option of following the terms and conditions either of that numbered
@@ -1498,19 +1499,19 @@ Foundation.  If the Program does not specify a version number of the
 GNU General Public License, you may choose any version ever published
 by the Free Software Foundation.
 
-If the Program specifies that a proxy can decide which future
+  If the Program specifies that a proxy can decide which future
 versions of the GNU General Public License can be used, that proxy's
 public statement of acceptance of a version permanently authorizes you
 to choose that version for the Program.
 
-Later license versions may give you additional or different
+  Later license versions may give you additional or different
 permissions.  However, no additional obligations are imposed on any
 author or copyright holder as a result of your choosing to follow a
 later version.
 
-15. Disclaimer of Warranty.
+  15. Disclaimer of Warranty.
 
-THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
 APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
 HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
 OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
@@ -1519,9 +1520,9 @@ PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
 IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
 ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 
-16. Limitation of Liability.
+  16. Limitation of Liability.
 
-IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
 WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
 THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
 GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
@@ -1531,86 +1532,86 @@ PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
 EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGES.
 
-17. Interpretation of Sections 15 and 16.
+  17. Interpretation of Sections 15 and 16.
 
-If the disclaimer of warranty and limitation of liability provided
+  If the disclaimer of warranty and limitation of liability provided
 above cannot be given local legal effect according to their terms,
 reviewing courts shall apply local law that most closely approximates
 an absolute waiver of all civil liability in connection with the
 Program, unless a warranty or assumption of liability accompanies a
 copy of the Program in return for a fee.
 
- END OF TERMS AND CONDITIONS
+                     END OF TERMS AND CONDITIONS
 
-How to Apply These Terms to Your New Programs
+            How to Apply These Terms to Your New Programs
 
-If you develop a new program, and you want it to be of the greatest
+  If you develop a new program, and you want it to be of the greatest
 possible use to the public, the best way to achieve this is to make it
 free software which everyone can redistribute and change under these terms.
 
-To do so, attach the following notices to the program.  It is safest
+  To do so, attach the following notices to the program.  It is safest
 to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
-<one line to give the program's name and a brief idea of what it does.>
-Copyright (C) <year>  <name of author>
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Also add information on how to contact you by electronic and paper mail.
 
-If the program does terminal interaction, make it output a short
+  If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-<program>  Copyright (C) <year>  <name of author>
-This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
-This is free software, and you are welcome to redistribute it
-under certain conditions; type `show c' for details.
+    <program>  Copyright (C) <year>  <name of author>
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
 
 The hypothetical commands `show w' and `show c' should show the appropriate
 parts of the General Public License.  Of course, your program's commands
 might be different; for a GUI interface, you would use an "about box".
 
-You should also get your employer (if you work as a programmer) or school,
+  You should also get your employer (if you work as a programmer) or school,
 if any, to sign a "copyright disclaimer" for the program, if necessary.
 For more information on this, and how to apply and follow the GNU GPL, see
-<http://www.gnu.org/licenses/>.
+<https://www.gnu.org/licenses/>.
 
-The GNU General Public License does not permit incorporating your program
+  The GNU General Public License does not permit incorporating your program
 into proprietary programs.  If your program is a subroutine library, you
 may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
-<http://www.gnu.org/philosophy/why-not-lgpl.html>.
-]]></ProtectedString>
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
+]]]]></ProtectedString>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="ModuleScript" referent="RBX4B3AC81CD04E4F03A4D74F92A6685D99">
+		<Item class="ModuleScript" referent="RBXC22863EB58674C11AF80DB660BFB3E4F">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">README</string>
-				<string name="ScriptGuid"></string>
+				<string name="ScriptGuid">{8519C6F3-C211-4B5D-BB09-115E436A84F7}</string>
 				<ProtectedString name="Source"></ProtectedString>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBXE6108A43BD8E45F2B631F2ED5A17EC9D">
+		<Item class="Folder" referent="RBX6499B08BD47B4E9289F221D00516EE08">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<string name="Name">Sound_Storage</string>
@@ -1618,14 +1619,14 @@ Public License instead of this License.  But first, please read
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBXFE5735167F79463AAF25AD88524F09A9">
+		<Item class="Folder" referent="RBX909C9CBA6F2F4E6E98C0B41DD8E7C48B">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<string name="Name">Libs</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBXB94D3D1922C9401B88711AA55A75A755">
+			<Item class="ModuleScript" referent="RBX99485DD37BC84C75ABB0376CDB315495">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1633,7 +1634,7 @@ Public License instead of this License.  But first, please read
 					<string name="ScriptGuid">{03BAA859-5C66-4B63-8FF0-29AE0659B303}</string>
 					<ProtectedString name="Source"><![CDATA[--[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  Swan Airways
+    Copyright © 2020 ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -1659,7 +1660,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX813F6F6110714B8F8EEFF0D3826F78BD">
+			<Item class="ModuleScript" referent="RBX77909374174649DB8F438C9855F82F46">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1667,7 +1668,7 @@ end
 					<string name="ScriptGuid">{B8DB3AFB-8541-4C9B-9287-8F43DDC19462}</string>
 					<ProtectedString name="Source"><![CDATA[--[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  Swan Airways
+    Copyright © 2020 ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -1714,7 +1715,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX209D0C6327464E9FBF80ACC3C9AB273B">
+			<Item class="ModuleScript" referent="RBX8F10EB7242DB497D890CAF7BEF8C4775">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1722,7 +1723,7 @@ end
 					<string name="ScriptGuid">{4E61FB0B-73DB-4BF5-A412-F638460A20C4}</string>
 					<ProtectedString name="Source"><![CDATA[--[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  Swan Airways
+    Copyright © 2020 ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -1778,15 +1779,15 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX386A330A31B54D7792E6FA55C3778899">
+			<Item class="ModuleScript" referent="RBX82B3BC1E24104713A8FA0E66FDB99B92">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">RemoveSafeObjs</string>
-					<string name="ScriptGuid"></string>
+					<string name="ScriptGuid">{1ABE4440-BAF0-4356-976E-EB4C6DBB9DA9}</string>
 					<ProtectedString name="Source"><![CDATA[--[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  Swan Airways
+    Copyright © 2020 ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -1820,15 +1821,15 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX8051578E4C224C708220C0D5BFCB02C6">
+			<Item class="ModuleScript" referent="RBX97789B9377D4437B8A1092DAE5DA3029">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">ScanObjectsGet</string>
-					<string name="ScriptGuid"></string>
+					<string name="ScriptGuid">{124CB6AC-A38B-4A0D-8025-3F3353FD4BDE}</string>
 					<ProtectedString name="Source"><![CDATA[--[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  Swan Airways
+    Copyright © 2020 ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -1922,7 +1923,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX218B1BF8A7DB46B38AB56033996DFCD7">
+			<Item class="ModuleScript" referent="RBXFA4DA2827C2E4CF1B0820B0765ECCDC3">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -1930,7 +1931,7 @@ end
 					<string name="ScriptGuid">{9882FF75-4A45-4081-9864-B392DF6B2EA1}</string>
 					<ProtectedString name="Source"><![CDATA[--[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  Swan Airways
+    Copyright © 2020 ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -2051,13 +2052,29 @@ end
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ModuleScript" referent="RBXFF5A052EA4D14A47948F6E103852B28D">
+		<Item class="ModuleScript" referent="RBXFF48C2C9887F46EE957564A7297A3DCA">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">DataBase</string>
 				<string name="ScriptGuid">{4420F572-3918-41A1-966B-677BD7A8381C}</string>
-				<ProtectedString name="Source"><![CDATA[
+				<ProtectedString name="Source"><![CDATA[--[[
+    Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
+    Copyright © 2020  ccuser44 (ALE111_boiPNG)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+]]
 
 local DB = {}
 
@@ -6545,14 +6562,33 @@ return DB]]></ProtectedString>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="ModuleScript" referent="RBX314AF6CF402C4589A2D179ED3EA2F451">
+		<Item class="ModuleScript" referent="RBX1C13102EADA940F086A1786770C7D7B7">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">CHANGELOG</string>
 				<string name="ScriptGuid">{693545B3-88AE-43D5-A14D-A174B59C12A9}</string>
-				<ProtectedString name="Source"><![CDATA[-- [[Version INSERT INSERT - INSERT]],
+				<ProtectedString name="Source"><![CDATA[--[[
+    Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
+    Copyright © 2020 ccuser44 (ALE111_boiPNG)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+]]
+
+-- [[Version INSERT INSERT - INSERT]],
 return {
+	[[Version Alpha 0.0.9 - Some lisencing changes. Added malicious user and group detection.]],
 	[[Version Alpha 0.0.8 - Added binary detection in the require obfuscation detection and some small editions.]],
 	[[Version Alpha 0.0.7 - Made malicious users and malicious groups detection list to ease detection.]],
 	[[Version Alpha 0.0.6 - Made into rojo and maybe did some other changes.]],
@@ -6567,7 +6603,7 @@ return {
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBX56C7503494D14129A633D2262FD196A7">
+		<Item class="Folder" referent="RBX6C8D92C72A7F48E4A98E071E3649BD00">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<string name="Name">UI</string>
@@ -6576,14 +6612,14 @@ return {
 			</Properties>
 		</Item>
 	</Item>
-	<Item class="Folder" referent="RBX5D7C3B810DED47B6AB46F787F00A8053">
+	<Item class="Folder" referent="RBXD4A95E76F4C4442C995176E63EBDDEE7">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<string name="Name">Dependancies</string>
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="ModuleScript" referent="RBX0B5537F9E83747718D48EACBE255B778">
+		<Item class="ModuleScript" referent="RBX4250875A03C541E0ACFD35F229715394">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -6640,7 +6676,7 @@ return Roact]]></ProtectedString>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBX87D2CE8ED64B4FB48533F497E6215DBF">
+			<Item class="ModuleScript" referent="RBXB75E7ADABDCB4C108F228B22038937A9">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6714,7 +6750,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX24BB88AFD3764F78BD2D05741EEBF610">
+			<Item class="ModuleScript" referent="RBX3253749029AA47E8B81F79B67CD8F1B9">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6731,7 +6767,7 @@ return None]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX17E88C7F3E6941619C494F294487E40B">
+			<Item class="ModuleScript" referent="RBX0C1FFA812A8642968494FC220BDEE675">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6771,7 +6807,7 @@ return Symbol]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX0DB5188F3A744493952F6DA734F0F774">
+			<Item class="ModuleScript" referent="RBXA4F666F7950B4E62BD69EEC0ACAC4984">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6819,7 +6855,7 @@ return createRef]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX7F84230985A94E6AA8265C39D3B5C2A8">
+			<Item class="ModuleScript" referent="RBX46809BF712554E2C9EFA9117F8352DEC">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6856,7 +6892,7 @@ return assign]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX5416D731D8624CB19416557FFF315F5F">
+			<Item class="ModuleScript" referent="RBX5CC1B259CDA3476E998B7BAC8EB7BE95">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6890,7 +6926,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX316055E532E342D09D925501E2CAD3FC">
+			<Item class="ModuleScript" referent="RBXA9F0681B8DCE42A2A1C329FFA4C91DD2">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -6990,7 +7026,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX22ED809A2F3F4F2D81338B430C9AC0EE">
+			<Item class="ModuleScript" referent="RBXF83D7CA6E87D44B98D42AB09799AAFAF">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -7041,7 +7077,7 @@ return PureComponent]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXE6A0AC46C7F84A7C9DC8AF61F6689CEC">
+			<Item class="ModuleScript" referent="RBX10E6E3D5742B44AB89333D99CA5C2896">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -7146,7 +7182,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX301ACC4C48144105BAB397DAB81BBFED">
+			<Item class="ModuleScript" referent="RBXC80E4174FA5F4139AA17A74A1B31F018">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -7200,7 +7236,7 @@ return invalidSetStateMessages]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX1EB37B715D474841B3723D2C08BD3B3E">
+			<Item class="ModuleScript" referent="RBX8047812F846F4B298290E7F01B7A672B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -7217,7 +7253,7 @@ return Config.new()]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXB7034D73DE04465A9EBBE64F0DC696B6">
+			<Item class="ModuleScript" referent="RBXDF3CB86DE84D49CC86F5258E7430156D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8176,7 +8212,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX8645665B60A04CFBB177B8DD9270D72D">
+			<Item class="ModuleScript" referent="RBXFBDEB82E9A82482284E0259A7695596E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8345,7 +8381,7 @@ return Logging]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX1E1A48958DE0483AB63EE58FC5A6709B">
+			<Item class="ModuleScript" referent="RBX0F0BE0EAF8B648B196CBCEBEF1B7BCC7">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8437,7 +8473,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXB56F75B9FBBB4BF9B49DC16C89F8E49B">
+			<Item class="ModuleScript" referent="RBX4243EE17ED324427A8D2ADEEEE33EEAF">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8452,7 +8488,7 @@ return Portal]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX27BF83C3EB234CF1A7EAB28568B804D6">
+			<Item class="ModuleScript" referent="RBXA89A0276223E417DA50DEA0391D281F7">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -8969,7 +9005,7 @@ return Component]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXC6CAD677F7BC48EE9C8480034306DA1A">
+			<Item class="ModuleScript" referent="RBX0E1B042B022A475EB5B634215B7841B9">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9000,7 +9036,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX4C96BA4E7E004E799F146F77F7E0CE24">
+			<Item class="ModuleScript" referent="RBX5A876A4AC053409E870262B910CDCDB0">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9249,7 +9285,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX8FFEA239CEFF4FA8B3F61A870F175C55">
+			<Item class="ModuleScript" referent="RBX4B9939CD10AA4FE98C31447689FCD8BD">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9266,7 +9302,7 @@ return internalAssert]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX1103C180E3C14C06856FACFBD51A7476">
+			<Item class="ModuleScript" referent="RBXC6FD16A6A5CB41719ABA336F77A079D1">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9545,7 +9581,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXC5A9A914EDCD4F0D9B2B469ABDDB1F2D">
+			<Item class="ModuleScript" referent="RBX382B05E85EAB47BFBC46459E23EC7B77">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9606,7 +9642,7 @@ return ElementKind]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX3F0AE09ED5A64B16944471DFACB01DEE">
+			<Item class="ModuleScript" referent="RBXAB2961E2356B42E9AB5C83C1835B72BA">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9900,7 +9936,7 @@ return RobloxRenderer
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX555F24180726464FBA0BCD7596471A73">
+			<Item class="ModuleScript" referent="RBXF1A702147C0D487898EFD165C397D66D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9943,7 +9979,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXAB76687912C3458C86E14F875426166A">
+			<Item class="ModuleScript" referent="RBXE056E331F8ED4C678ED35B92F1D2C005">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -9980,7 +10016,7 @@ return strict]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXBEE2DDDDC4E44FC5A01CD558306D69C6">
+			<Item class="ModuleScript" referent="RBX3A28C19FAA6441F789E4A9934AF8291F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -10065,7 +10101,7 @@ return createSignal]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX6113E11D6FE045E9B731B1AD86BC1BED">
+			<Item class="ModuleScript" referent="RBX38307B5E7B18451B8130A282A5BD00E0">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -10401,7 +10437,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX46F65ABDCF8E4D4285584E530BFBED7E">
+			<Item class="ModuleScript" referent="RBX084085C724C645089F9B5DBBE697E969">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -10466,14 +10502,14 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="Folder" referent="RBXB3DDBC2898A54EB6A6436B01D8C053B1">
+			<Item class="Folder" referent="RBX0844A0EB6A004BF9B63F494A4B8751B5">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<string name="Name">Component.spec</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBX79EA213E116343E28E95D1EFBA2544C9">
+				<Item class="ModuleScript" referent="RBXB1DAB8B9B46841E0B061B99A07423DA1">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -10780,7 +10816,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX56838243A8FB439384623BFBDBD6B991">
+				<Item class="ModuleScript" referent="RBX61F571A2326242FE95799037F424A331">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11069,7 +11105,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXB3DEBF014DA641E48319DBC1E648F63D">
+				<Item class="ModuleScript" referent="RBX1FF917EB7DFB4269BCA5529160E89136">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11114,7 +11150,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX3CF4E1DD18B740E4B4A5F08C1F603042">
+				<Item class="ModuleScript" referent="RBX640530B69BFE41469844925B8B1013E4">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11153,7 +11189,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXD12F1E20AC494B8EBD09EA75373F5B82">
+				<Item class="ModuleScript" referent="RBX8CA83F4CD2984BC39E027B708134DCE2">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11230,7 +11266,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXECE70124911B48D69DBD7009A7EC7DB7">
+				<Item class="ModuleScript" referent="RBX1539090342D541499426E7B58F46CABF">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11843,7 +11879,7 @@ end
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX3928031471864414AAD65C71E7D9FA53">
+				<Item class="ModuleScript" referent="RBX4A0C44774E064E17A7859FEB5F549D35">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12003,7 +12039,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX9DD8EB2191EB4C699A7D083E1BECC7BA">
+				<Item class="ModuleScript" referent="RBX594DE5D8C9BC425A83A8B8C4E4A4743C">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12106,7 +12142,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX2D0C4BCE54AE426896F2D7C9B419D1E1">
+				<Item class="ModuleScript" referent="RBX3CF879EFAE3E4BEFB744E47A1738CBD7">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12152,7 +12188,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXAF3B04C593254DEA8ACB7F493B6DA59F">
+				<Item class="ModuleScript" referent="RBX95C41C51BD8E428098AABD33DE4B4519">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12402,7 +12438,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXB2EA5EC5965F4EC4A85107ABD8F22BA7">
+				<Item class="ModuleScript" referent="RBX11046F136F1A423C8202CE89A82D1440">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12504,7 +12540,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXE0121F1BD18D42BC90C12DA68D763790">
+				<Item class="ModuleScript" referent="RBXCA6ED231E2E9437EB2AD9E252F3F1B1E">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12689,7 +12725,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXD2985134EA1E4D1CB0B72CBE52557437">
+				<Item class="ModuleScript" referent="RBX162D67910F5F46DA981BBEFE4072ADD5">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -12825,7 +12861,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX508D02F664AE4AA7A847CF3C7E63AD59">
+				<Item class="ModuleScript" referent="RBX1E4DDA4D0550481891C1919138245636">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13044,7 +13080,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX2513F6FA01EA408995FB822C7CF27DBA">
+				<Item class="ModuleScript" referent="RBX2C11E085267D4052BE2484BEB8DDD8D3">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13096,7 +13132,7 @@ end]]></ProtectedString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="ModuleScript" referent="RBX81BA142BE9C749B4A839029E0A57AC2A">
+			<Item class="ModuleScript" referent="RBX35961EE8A5144F90B9DE42301EDE6CCB">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13158,7 +13194,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX356F2B3918A247328D84420D4CFC38A7">
+			<Item class="ModuleScript" referent="RBX0AE16F41CBE547228136B380C9304D1E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13325,7 +13361,7 @@ return BindingInternalApi]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXF669FB5380EC46D5A74A38F7FE898DD6">
+			<Item class="ModuleScript" referent="RBX1302E714067343A187F31E1958772869">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13445,7 +13481,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX6344A3283E114DBB840018C97212BDFD">
+			<Item class="ModuleScript" referent="RBXB14604E7678247F2B37DE7C03E33B22A">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13607,7 +13643,7 @@ return createContext
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXD36B3CE748C84633999E8E5467CE5EE5">
+			<Item class="ModuleScript" referent="RBX9E42FA1936A2476F941088E048865A0B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13642,7 +13678,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXCE94D4E95FAB4738B17BB450015FA4B9">
+			<Item class="ModuleScript" referent="RBXD7C07C594E8C4280B87A807B8E3C9450">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13725,7 +13761,7 @@ return assertDeepEqual]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXC5D77E29C4FB4800964B548CB046F97F">
+			<Item class="ModuleScript" referent="RBX8867F63AB8F8497C8467E9756E3BAC0D">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13744,14 +13780,14 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="Folder" referent="RBX50E34CDF3EB64812899F160E1AC3DCFA">
+			<Item class="Folder" referent="RBX0A5C47A1AED0498BB9429B7EE5451C38">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<string name="Name">PropMarkers</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ModuleScript" referent="RBX08DCDE19EB89495487091A6A575DD529">
+				<Item class="ModuleScript" referent="RBXCDC7D77E0A3349E381935414618F3E05">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13780,7 +13816,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX66C47C0330394137BB7A23F1B321836E">
+				<Item class="ModuleScript" referent="RBX100F291A8774418A94F1C4FB97AE55FF">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13809,7 +13845,7 @@ end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXD8A2F515F5CB4F908A0583BC392312E1">
+				<Item class="ModuleScript" referent="RBXA116FED1582349E3A83E3385B24D12FA">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13824,7 +13860,7 @@ return Children]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXA902087F7BB44D1CB5AD7C7901E6BB48">
+				<Item class="ModuleScript" referent="RBXE4CD6FCAD4254F5B82687D40F8DEE171">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13873,7 +13909,7 @@ return Change
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBXE0750112A1B0444F9B7A0068B0E23954">
+				<Item class="ModuleScript" referent="RBXE540EA5A01C14FA79F0F1BC0BDB5C26C">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13925,7 +13961,7 @@ return Event
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="ModuleScript" referent="RBX2F53C00C7EC64686AE0614CD8F30DE15">
+				<Item class="ModuleScript" referent="RBX037BE9A97C9A4641A01677B39B2DEDF2">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<Content name="LinkedSource"><null></null></Content>
@@ -13941,7 +13977,7 @@ return Ref]]></ProtectedString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="ModuleScript" referent="RBXAFE413E750E748A6B3BF9474675275A5">
+			<Item class="ModuleScript" referent="RBXACCCB74571E440388CB6CF22E195399F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -13970,7 +14006,7 @@ return ComponentLifecyclePhase]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX7ECBAB124CF84512A80A87F0C9A44137">
+			<Item class="ModuleScript" referent="RBX061F2DA2DBB44A72BAD70E38084CB6E7">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14079,7 +14115,7 @@ return ElementUtils]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX272EFCAE54EC43C29DDBDCE0D319BA84">
+			<Item class="ModuleScript" referent="RBX0E3C426D07024F21A6511A5162AB7CA0">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14117,7 +14153,7 @@ return oneChild]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXA6EFF4BF9A2B471DB2A8EA6ADD404867">
+			<Item class="ModuleScript" referent="RBX5ADACF31793D4BA298356F87BD905B27">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14274,7 +14310,7 @@ return SingleEventManager]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX45C026877C254CCA88EB306CE906915D">
+			<Item class="ModuleScript" referent="RBX261F99543C4E4397986F6BBB82A48552">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14588,7 +14624,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX00C3C699A6424A6E919303416A041FA3">
+			<Item class="ModuleScript" referent="RBX5B48088BF1E140308D8F1F1E596B6B5F">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14673,7 +14709,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX4953FCFF8C7544FB968B65DA4DB8644A">
+			<Item class="ModuleScript" referent="RBX8638B275F7C2453FA466075CCC2F0248">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14737,7 +14773,7 @@ return getDefaultInstanceProperty]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXC424B5CEFD88449E817615C42E4F4661">
+			<Item class="ModuleScript" referent="RBX687A0C49392746D1B38793923955E59E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14759,7 +14795,7 @@ return createFragment]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXFB556967F1A84858A70FDEA6BE6C1E2E">
+			<Item class="ModuleScript" referent="RBX335D73F91BD74DAAA9367BAC839188ED">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14804,7 +14840,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX632011D3C80D499EA244A0AC7B421B3F">
+			<Item class="ModuleScript" referent="RBX1FA3CCA977F4444898DA4FA0F774A771">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14838,7 +14874,7 @@ return NoopRenderer]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX9634EED1F7AB44CC96174CA9A963243F">
+			<Item class="ModuleScript" referent="RBX5FB930BAB1C44F4199CE2278CB7C4328">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -14947,7 +14983,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX130D95A88B6E414EAA693CBEC472774F">
+			<Item class="ModuleScript" referent="RBX56E634E9184649649C54F4A6C22845C0">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15025,7 +15061,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX154F834B7E324A89B66E80CEE4F7944F">
+			<Item class="ModuleScript" referent="RBX48B260A14533458C9B481B9EE338F338">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15082,7 +15118,7 @@ return createReconcilerCompat]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX2CEBBD7BE1024C939B5FC1E63C8BF682">
+			<Item class="ModuleScript" referent="RBXD39808E273EE470CBA66A6709E673E80">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15215,7 +15251,7 @@ return Config]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXB5E441664D4F4274B5A233F8D9A83877">
+			<Item class="ModuleScript" referent="RBXB126D2EF8CB6464DAA70D37A1E3C529E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15273,7 +15309,7 @@ return Type]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX259267465B0D4B18823C735C8944DC49">
+			<Item class="ModuleScript" referent="RBXB67BF2AE4E28480DB82A2CC2FDF80120">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15372,7 +15408,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX7D3AA065CF354FCABCA4591A3CDA071D">
+			<Item class="ModuleScript" referent="RBX9A2D2F3248BC46C28AD655F49BCF7B4E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15467,7 +15503,7 @@ return createSpy]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXCBACDC7308BF41D3A0701FDD3A297C38">
+			<Item class="ModuleScript" referent="RBXB4DB5570E69B41E0A4532681FEC8BBCD">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15501,7 +15537,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXE844AB48800A4CC3AC799A1491F5C348">
+			<Item class="ModuleScript" referent="RBXC54E215A2B61472FA2609A17F69A4CC8">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -15565,7 +15601,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX3216BF9A2F584B77B662B5BB7B87A672">
+			<Item class="ModuleScript" referent="RBXADD2532C5A564825874D3FBB0BFE9038">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -16032,7 +16068,7 @@ return createReconciler
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX6DE23590F4EA4C12A35F47E00DBC3F4B">
+			<Item class="ModuleScript" referent="RBX3694F73DD8E441A9985B82002D58D3DA">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -16117,7 +16153,7 @@ return createElement]]></ProtectedString>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ModuleScript" referent="RBX1976CC9415FC4B769E8AF494B09614A5">
+		<Item class="ModuleScript" referent="RBX5F645D9613624693A8F19E03744C29C6">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -17481,7 +17517,7 @@ return sha]]></ProtectedString>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBXD1A0D5F3AE7E4DB3AD0417FBD5276EE7">
+			<Item class="ModuleScript" referent="RBXC8FA9765E55B43EEA1CD1F9FCE244578">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17625,7 +17661,7 @@ return Base64]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXD809311FEE5D4E249BEE997A247EBA8D">
+			<Item class="ModuleScript" referent="RBX300E4DDDB0214EC08C0EB78C3481B658">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17671,7 +17707,7 @@ end]]></ProtectedString>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ModuleScript" referent="RBX5BEA3953FE164333933B0F9FA62A2ED2">
+		<Item class="ModuleScript" referent="RBXBEF6B9F5B7CE4256B905C4D7FBFF4150">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -17693,7 +17729,7 @@ return {
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBXD678F59F454F4B93961CF6AE5022B575">
+			<Item class="ModuleScript" referent="RBX0BA09B05E7824CDD9EE52AFB36D41EA8">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17720,7 +17756,7 @@ return join]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX9E935A824C5043F0825E553AFB8FFF3D">
+			<Item class="ModuleScript" referent="RBXAA2DE1D3F180464DB3330ADAC136FF5E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17775,7 +17811,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX48AAD372A22E49AC9A433C89FDC0E499">
+			<Item class="ModuleScript" referent="RBXF0ABAFDB4B1C4EAF8BB7ED50A82A2BE3">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -17788,7 +17824,7 @@ return Symbol.named("RoduxStore")]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX7FEEEE46247C4CBD909AE1ECA1459B3A">
+			<Item class="ModuleScript" referent="RBX7E4C15FF60CE4013AEE9D3070D8ED234">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18151,7 +18187,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX29AD6607D649477D80FDEE67B91FC7A2">
+			<Item class="ModuleScript" referent="RBX67253C459DDC4418BFA4C50C5540D62C">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18223,7 +18259,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX826BB2921E5A4F019E3F6329F2AC189E">
+			<Item class="ModuleScript" referent="RBXB362237E09344266B0248E3FCEBC066E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18434,7 +18470,7 @@ return connect]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX613BB87143C0497A8C1426690492477F">
+			<Item class="ModuleScript" referent="RBXACE32E575484446085742960C5694243">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18448,7 +18484,7 @@ return connect]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX46CE6457C8F1457A8652F797B2937D7A">
+			<Item class="ModuleScript" referent="RBXEEF75BCE3FC64798A2CD573B3A347E92">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18501,7 +18537,7 @@ return Symbol]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX127CD5DC08A24142A616E9F00164CFC9">
+			<Item class="ModuleScript" referent="RBXCA28653F57964C399AFA8816BED3D8FD">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18518,7 +18554,7 @@ return getStore]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX33D25F8B0E5744E78B6815E9AC80CC42">
+			<Item class="ModuleScript" referent="RBX483D7A2F19B1499796425C89801A9AD2">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18573,7 +18609,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXE9F4559557394DA7B6D68762E4C0991B">
+			<Item class="ModuleScript" referent="RBX6EE2D15A7FBC4280AB7FD668DA3EE0F0">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18613,7 +18649,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX9B82298C52FA473580CAB6CCA4B4A324">
+			<Item class="ModuleScript" referent="RBX48B1502E0B04455684E6D62092815672">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18646,7 +18682,7 @@ return shallowEqual]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX210CE978B0A24269B62DD279E0296658">
+			<Item class="ModuleScript" referent="RBX7A220A4CD01043318D7F1EB3749997B3">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18678,7 +18714,7 @@ return StoreProvider]]></ProtectedString>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="ModuleScript" referent="RBXBCCB1F4B9819425B8D6A2898BD25F41D">
+		<Item class="ModuleScript" referent="RBX1D06C44DE0DF4C39AD2BD67E7C8121C7">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
@@ -18701,7 +18737,7 @@ return {
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="ModuleScript" referent="RBX5A71DD6D81C144E29B47149BE973EA7B">
+			<Item class="ModuleScript" referent="RBXC1B1C1791209404D9D2DACC393AB8CBC">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18740,7 +18776,7 @@ return NoYield]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX2A42CF757B214A54A9CA05A47208F4A2">
+			<Item class="ModuleScript" referent="RBX508F0C189E484342B3BF20B8FDA5F2F7">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18825,7 +18861,7 @@ return Signal]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX4AB651E4879D434BA1C8EED08AC2EB83">
+			<Item class="ModuleScript" referent="RBX2EDC2A34210D41F38EB4D577405DFC1E">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -18967,7 +19003,7 @@ return Store
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXA066E24AA660472EB2D4E187664E3184">
+			<Item class="ModuleScript" referent="RBX74E268B4F89840088DA18D601AE544D1">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -19000,7 +19036,7 @@ return combineReducers
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXFFEB2A392AED4FFEA41B29AA4DA59BC5">
+			<Item class="ModuleScript" referent="RBX58E714BB5A0348C6AB7A071ABD666038">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -19026,7 +19062,7 @@ end
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX0857E9C88CA743D489BC7BF67FEA077E">
+			<Item class="ModuleScript" referent="RBX8DB0095473FA4F649EC44A515529B1C1">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>
@@ -19092,7 +19128,7 @@ return loggerMiddleware
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX9A4BE32F9FD74ED49B6E89D2A7DCB33D">
+			<Item class="ModuleScript" referent="RBX1E894B96637E446692AC0693590049ED">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<Content name="LinkedSource"><null></null></Content>

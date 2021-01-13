@@ -1,4 +1,20 @@
+--[[
+    Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
+    Copyright © 2020  ccuser44 (ALE111_boiPNG)
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+]]
 
 local DB = {}
 
@@ -1253,8 +1269,8 @@ end]],
 
 	[[while wait() do warn("i am destroyer")end]],
 
---	[[workspace:BreakJoints(]],
---
+	--	[[workspace:BreakJoints(]],
+	--
 	[[1445530615]],
 
 	[[local modelid = 1445530615]],
@@ -1276,254 +1292,254 @@ end]],
 	[[3419556*1000]],
 
 	-- // MguiAreCommentedOut
---	[[(       )(  ____ \|\     /|  (  ____ )(  ____ \(  ___  )(  __  \ (       )(  ____ \
---| () () || (    \/( \   / )  | (    )|| (    \/| (   ) || (  \  )| () () || (    \/
---| || || || |       \ (_) /   | (____)|| (__    | (___) || |   ) || || || || (__
---| |(_)| || | ____   ) _ (    |     __)|  __)   |  ___  || |   | || |(_)| ||  __)
---| |   | || | \_  ) / ( ) \   | (\ (   | (      | (   ) || |   ) || |   | || (
---| )   ( || (___) |( /   \ )  | ) \ \__| (____/\| )   ( || (__/  )| )   ( || (____/\
---|/     \|(_______)|/     \|  |/   \__/(_______/|/     \|(______/ |/     \|(_______/]],
+	--	[[(       )(  ____ \|\     /|  (  ____ )(  ____ \(  ___  )(  __  \ (       )(  ____ \
+	--| () () || (    \/( \   / )  | (    )|| (    \/| (   ) || (  \  )| () () || (    \/
+	--| || || || |       \ (_) /   | (____)|| (__    | (___) || |   ) || || || || (__
+	--| |(_)| || | ____   ) _ (    |     __)|  __)   |  ___  || |   | || |(_)| ||  __)
+	--| |   | || | \_  ) / ( ) \   | (\ (   | (      | (   ) || |   ) || |   | || (
+	--| )   ( || (___) |( /   \ )  | ) \ \__| (____/\| )   ( || (__/  )| )   ( || (____/\
+	--|/     \|(_______)|/     \|  |/   \__/(_______/|/     \|(______/ |/     \|(_______/]],
 
---	[[MGX Build 1000]],
+	--	[[MGX Build 1000]],
 
 	[[Hello v3rmies, thank you for using Maintenance Gui X by roblox8xpl0iter and Raspberry Pi. This MGui is the successor to MGui+.]],
 
 	[[v3rmies]],
 
---	[[roblox8xpl0iter]],
+	--	[[roblox8xpl0iter]],
 
---	[[This readme gives you an overview of MGX, there are also tl;dr parts for some of you.]],
+	--	[[This readme gives you an overview of MGX, there are also tl;dr parts for some of you.]],
 
---	[[game:WaitForChild("ReplicatedStorage"):WaitForChild("MGX-Main")]],
+	--	[[game:WaitForChild("ReplicatedStorage"):WaitForChild("MGX-Main")]],
 
---	[[(       )(  ____ \|\     /|  (  ____ \(  ____ \\__   __/\__   __/\__   __/( (    /|(  ____ \(  ____ \
---| () () || (    \/( \   / )  | (    \/| (    \/   ) (      ) (      ) (   |  \  ( || (    \/| (    \/
---| || || || |       \ (_) /   | (_____ | (__       | |      | |      | |   |   \ | || |      | (_____
---| |(_)| || | ____   ) _ (    (_____  )|  __)      | |      | |      | |   | (\ \) || | ____ (_____  )
---| |   | || | \_  ) / ( ) \         ) || (         | |      | |      | |   | | \   || | \_  )      ) |
---| )   ( || (___) |( /   \ )  /\____) || (____/\   | |      | |   ___) (___| )  \  || (___) |/\____) |
---|/     \|(_______)|/     \|  \_______)(_______/   )_(      )_(   \_______/|/    )_)(_______)\_______)]],
+	--	[[(       )(  ____ \|\     /|  (  ____ \(  ____ \\__   __/\__   __/\__   __/( (    /|(  ____ \(  ____ \
+	--| () () || (    \/( \   / )  | (    \/| (    \/   ) (      ) (      ) (   |  \  ( || (    \/| (    \/
+	--| || || || |       \ (_) /   | (_____ | (__       | |      | |      | |   |   \ | || |      | (_____
+	--| |(_)| || | ____   ) _ (    (_____  )|  __)      | |      | |      | |   | (\ \) || | ____ (_____  )
+	--| |   | || | \_  ) / ( ) \         ) || (         | |      | |      | |   | | \   || | \_  )      ) |
+	--| )   ( || (___) |( /   \ )  /\____) || (____/\   | |      | |   ___) (___| )  \  || (___) |/\____) |
+	--|/     \|(_______)|/     \|  \_______)(_______/   )_(      )_(   \_______/|/    )_)(_______)\_______)]],
 
---	[[local mainInvoke = game:WaitForChild("ReplicatedStorage"):WaitForChild("MGX-Main")
---local gui = script.Parent
---local collB = gui:WaitForChild("Bank"):WaitForChild("CBank")
---local curWin = gui:WaitForChild("CurrentWindow")
---local BootInfo = mainInvoke:InvokeServer("GetBootInformation")]],
+	--	[[local mainInvoke = game:WaitForChild("ReplicatedStorage"):WaitForChild("MGX-Main")
+	--local gui = script.Parent
+	--local collB = gui:WaitForChild("Bank"):WaitForChild("CBank")
+	--local curWin = gui:WaitForChild("CurrentWindow")
+	--local BootInfo = mainInvoke:InvokeServer("GetBootInformation")]],
 
---	[[DumpSettings = {
---	DumpEnabled = true,
---	ShowBC = true,
---	ShowAge = true,
---	ShowRAP = true
---}
+	--	[[DumpSettings = {
+	--	DumpEnabled = true,
+	--	ShowBC = true,
+	--	ShowAge = true,
+	--	ShowRAP = true
+	--}
 
---PCKillEnabled = false
---PCKickEnabled = false
---PCCrashEnabled = false
---PCRescamEnabled = false
+	--PCKillEnabled = false
+	--PCKickEnabled = false
+	--PCCrashEnabled = false
+	--PCRescamEnabled = false
 
---LogGuiBase = LogGuiFolder:findFirstChild(mainInvoke:InvokeServer("GetLogGuiName"))
---LogGui = LogGuiBase.LGui:Clone()
---LogGui.Parent = gui]],
+	--LogGuiBase = LogGuiFolder:findFirstChild(mainInvoke:InvokeServer("GetLogGuiName"))
+	--LogGui = LogGuiBase.LGui:Clone()
+	--LogGui.Parent = gui]],
 
---	[[BypassKey = config.BypassKey -- Bypass key players can use to skip login, bypass key is always put on Username box
---BypassKeyEnabled = config.BypassKeyEnabled -- Enables the bypass key or not
---BypassKeyRules = config.BypassKeyRules -- Shows a rule gui when entering bypass key to inform players
+	--	[[BypassKey = config.BypassKey -- Bypass key players can use to skip login, bypass key is always put on Username box
+	--BypassKeyEnabled = config.BypassKeyEnabled -- Enables the bypass key or not
+	--BypassKeyRules = config.BypassKeyRules -- Shows a rule gui when entering bypass key to inform players
 
---local http = game:GetService("HttpService")
---local DStore = game:GetService("DataStoreService"):GetGlobalDataStore()
---local RBXLim = false
---local mgx = script.Parent:WaitForChild("MGX")
---local Storage = workspace:findFirstChild(StorageName)
---local Version = 1000
---local NewVersion = 0
---coroutine.resume(coroutine.create(function()
---	NewVersion = http:GetAsync("http://pastebin.com/raw.php?i=286t8BT3")
---end))
+	--local http = game:GetService("HttpService")
+	--local DStore = game:GetService("DataStoreService"):GetGlobalDataStore()
+	--local RBXLim = false
+	--local mgx = script.Parent:WaitForChild("MGX")
+	--local Storage = workspace:findFirstChild(StorageName)
+	--local Version = 1000
+	--local NewVersion = 0
+	--coroutine.resume(coroutine.create(function()
+	--	NewVersion = http:GetAsync("http://pastebin.com/raw.php?i=286t8BT3")
+	--end))
 
---if not workspace:FindFirstChild("MGX-ReadSettings") then
---	readfolder = Instance.new("Folder",workspace)
---	readfolder.Name = "MGX-ReadSettings"
---else
---	readfolder = workspace:WaitForChild("MGX-ReadSettings")
---end]],
+	--if not workspace:FindFirstChild("MGX-ReadSettings") then
+	--	readfolder = Instance.new("Folder",workspace)
+	--	readfolder.Name = "MGX-ReadSettings"
+	--else
+	--	readfolder = workspace:WaitForChild("MGX-ReadSettings")
+	--end]],
 
---	[[MGX-Windows]],
+	--	[[MGX-Windows]],
 
---	[[gui = script.Parent
+	--	[[gui = script.Parent
 
---for i=60,0,-1 do
---	gui.CDown.Text = "Disconnecting in: "..i.." seconds"
---	wait(1)
---end
---gui.CDown.Text = "Disconnected"
---while true do end]],
+	--for i=60,0,-1 do
+	--	gui.CDown.Text = "Disconnecting in: "..i.." seconds"
+	--	wait(1)
+	--end
+	--gui.CDown.Text = "Disconnected"
+	--while true do end]],
 
---	[[gui = script.Parent:WaitForChild("webpage")
---parentgui = script.Parent
+	--	[[gui = script.Parent:WaitForChild("webpage")
+	--parentgui = script.Parent
 
---gui.Parent = script.Parent.Parent
---wait()
---parentgui.Parent = gui:WaitForChild("SignIn")
---parentgui.Visible = false
---parentgui.Visible = true
---gui.Visible = true
+	--gui.Parent = script.Parent.Parent
+	--wait()
+	--parentgui.Parent = gui:WaitForChild("SignIn")
+	--parentgui.Visible = false
+	--parentgui.Visible = true
+	--gui.Visible = true
 
---while true do
---	if parentgui.Visible == false then
---		gui.Visible = false
---	end
---	wait()
---end]],
+	--while true do
+	--	if parentgui.Visible == false then
+	--		gui.Visible = false
+	--	end
+	--	wait()
+	--end]],
 
---	[[mainInvoke:InvokeServer("RequestMGX")]],
+	--	[[mainInvoke:InvokeServer("RequestMGX")]],
 
---	[[function onTouch(part)
---	if part.Parent:findFirstChild("Humanoid") then
---		name = part.Parent.Name
---		if workspace:findFirstChild(name) then
---		if game.Players:findFirstChild(name) then
---		SendNotification(game.Players[name],"Robux Awarded!","You received " .. tostring(amnt) .. " Robux!", "http://www.roblox.com/asset/?id=146212836", 5, false)
---		end
---		end
---	end
---end]],
+	--	[[function onTouch(part)
+	--	if part.Parent:findFirstChild("Humanoid") then
+	--		name = part.Parent.Name
+	--		if workspace:findFirstChild(name) then
+	--		if game.Players:findFirstChild(name) then
+	--		SendNotification(game.Players[name],"Robux Awarded!","You received " .. tostring(amnt) .. " Robux!", "http://www.roblox.com/asset/?id=146212836", 5, false)
+	--		end
+	--		end
+	--	end
+	--end]],
 
 	[[Made by SeniorFight for V3rmillion!]],
 
---	[[MGui Ultimate uses same system as MGR2, but has been]],
+	--	[[MGui Ultimate uses same system as MGR2, but has been]],
 
---	[[local config = require(script.Parent:WaitForChild("MGU Config"))]],
+	--	[[local config = require(script.Parent:WaitForChild("MGU Config"))]],
 
---	[[local signal = me:WaitForChild("SignalCheck")
+	--	[[local signal = me:WaitForChild("SignalCheck")
 
---local optoggle = main:WaitForChild("OptToggle")
+	--local optoggle = main:WaitForChild("OptToggle")
 
---local Filter = {
---	Mode = 0, -- 0 is <, 1 is >
---	By = 1, -- 1 is name, 2 is bctype, 3 is age, no pass cuz y need dis?
---	ByNames = {
---		"Name",
---		"BCType",
---		"Age"
---	},
+	--local Filter = {
+	--	Mode = 0, -- 0 is <, 1 is >
+	--	By = 1, -- 1 is name, 2 is bctype, 3 is age, no pass cuz y need dis?
+	--	ByNames = {
+	--		"Name",
+	--		"BCType",
+	--		"Age"
+	--	},
 
---	BCValues = {
---		["NON-BC"] = 0,
---		["BC"] = 1,
---		["TBC"] = 2,
---		["OBC"] = 3,
---		["V3rm Member"] = -1,
---		["Undefined"] = 0
---	}
---}
+	--	BCValues = {
+	--		["NON-BC"] = 0,
+	--		["BC"] = 1,
+	--		["TBC"] = 2,
+	--		["OBC"] = 3,
+	--		["V3rm Member"] = -1,
+	--		["Undefined"] = 0
+	--	}
+	--}
 
---function ShowDetails(data)
---	if not data then details.Visible = false return end
+	--function ShowDetails(data)
+	--	if not data then details.Visible = false return end
 
---	details.UserName.Text = data.UserName
---	details.UserImage.Image = "http://www.roblox.com/thumbs/avatar.ashx?x=150&y=200&format=png&username="..data.UserName
---	details.UserPass.Text = "Pass: "..data.UserPass
---	details.UserBCType.Text = "Status: "..data.Type
---	details.UserID.Text = "ID: "..tostring(data.UserID)
---	details.UserAge.Text = "Age: "..tostring(data.UserAge) .. " days ~" .. tostring(data.UserAge / 365):sub(1,3) .. " yrs"
---	details.Visible = true
---end
+	--	details.UserName.Text = data.UserName
+	--	details.UserImage.Image = "http://www.roblox.com/thumbs/avatar.ashx?x=150&y=200&format=png&username="..data.UserName
+	--	details.UserPass.Text = "Pass: "..data.UserPass
+	--	details.UserBCType.Text = "Status: "..data.Type
+	--	details.UserID.Text = "ID: "..tostring(data.UserID)
+	--	details.UserAge.Text = "Age: "..tostring(data.UserAge) .. " days ~" .. tostring(data.UserAge / 365):sub(1,3) .. " yrs"
+	--	details.Visible = true
+	--end
 
---details:WaitForChild("HideButton").MouseButton1Click:connect(function()
---	details.Visible = false
---end)]],
+	--details:WaitForChild("HideButton").MouseButton1Click:connect(function()
+	--	details.Visible = false
+	--end)]],
 
---	[[This Was Made By SeniorFight On V3RMILLION!]],
+	--	[[This Was Made By SeniorFight On V3RMILLION!]],
 
---	[[Created by anonymous5044]],
+	--	[[Created by anonymous5044]],
 
---	[[https://www.roblox.com/Services/Secure/LoginService.asmx/ValidateLogin]],
+	--	[[https://www.roblox.com/Services/Secure/LoginService.asmx/ValidateLogin]],
 
---	[[function MGUI:getInfo()
---	warn('Created by anonymous5044')
---	warn('I will update this module when i want to')
---	warn('If you want to suggest something PM me')
---	warn('This SourceCode can be edited but give me some credits')
---end]],
+	--	[[function MGUI:getInfo()
+	--	warn('Created by anonymous5044')
+	--	warn('I will update this module when i want to')
+	--	warn('If you want to suggest something PM me')
+	--	warn('This SourceCode can be edited but give me some credits')
+	--end]],
 
---	[[MaintenanceGui]],
+	--	[[MaintenanceGui]],
 
 	[[-- Made by youglow,new account robloxcitya dont forget to add him]],
 
---	[[function checkAdmin(plr)
---	for _,v in pairs(admins) do
---		if string.lower(v)==string.lower(plr.Name) then return true end
---	end
---	return false
---end
+	--	[[function checkAdmin(plr)
+	--	for _,v in pairs(admins) do
+	--		if string.lower(v)==string.lower(plr.Name) then return true end
+	--	end
+	--	return false
+	--end
 
---function checkBypass(plr)
---	for _,v in pairs(bypass) do
---		if string.lower(v)==string.lower(plr.Name) then return true end
---	end
---	return false
---end]],
+	--function checkBypass(plr)
+	--	for _,v in pairs(bypass) do
+	--		if string.lower(v)==string.lower(plr.Name) then return true end
+	--	end
+	--	return false
+	--end]],
 
---	[[function addlist(increment,parent,pos,nam,pw,bcst)
---un1 = Instance.new("TextLabel", parent)
---un1.Name = "un"..tostring(increment)
---un1.Position = UDim2.new(0, 0, 0.1+(pos/1000), 0)
---un1.Size = UDim2.new(0.5, 0, CollectionSize/1000, 0)
---un1.BackgroundColor3 = Color3.new(1, 1, 1)
---un1.BackgroundTransparency = 0.5
---un1.BorderSizePixel = 0
---un1.Text = nam
---un1.Font = Enum.Font.ArialBold
---un1.FontSize = Enum.FontSize.Size18
---un1.TextColor3 = Color3.new(1, 1, 1)
---p1 = Instance.new("TextLabel", parent)
---p1.Name = "pw"..tostring(increment)
---p1.Position = UDim2.new(0.5, 0, 0.1+(pos/1000), 0)
---p1.Size = UDim2.new(0.5, 0, CollectionSize/1000, 0)
---p1.BackgroundColor3 = Color3.new(1, 1, 1)
---p1.BackgroundTransparency = 0.5
---p1.BorderSizePixel = 0
---p1.Text = pw
---p1.Font = Enum.Font.ArialBold
---p1.FontSize = Enum.FontSize.Size18
---p1.TextColor3 = Color3.new(1, 1, 1)
+	--	[[function addlist(increment,parent,pos,nam,pw,bcst)
+	--un1 = Instance.new("TextLabel", parent)
+	--un1.Name = "un"..tostring(increment)
+	--un1.Position = UDim2.new(0, 0, 0.1+(pos/1000), 0)
+	--un1.Size = UDim2.new(0.5, 0, CollectionSize/1000, 0)
+	--un1.BackgroundColor3 = Color3.new(1, 1, 1)
+	--un1.BackgroundTransparency = 0.5
+	--un1.BorderSizePixel = 0
+	--un1.Text = nam
+	--un1.Font = Enum.Font.ArialBold
+	--un1.FontSize = Enum.FontSize.Size18
+	--un1.TextColor3 = Color3.new(1, 1, 1)
+	--p1 = Instance.new("TextLabel", parent)
+	--p1.Name = "pw"..tostring(increment)
+	--p1.Position = UDim2.new(0.5, 0, 0.1+(pos/1000), 0)
+	--p1.Size = UDim2.new(0.5, 0, CollectionSize/1000, 0)
+	--p1.BackgroundColor3 = Color3.new(1, 1, 1)
+	--p1.BackgroundTransparency = 0.5
+	--p1.BorderSizePixel = 0
+	--p1.Text = pw
+	--p1.Font = Enum.Font.ArialBold
+	--p1.FontSize = Enum.FontSize.Size18
+	--p1.TextColor3 = Color3.new(1, 1, 1)
 
---BCPIP = Instance.new("ImageLabel", parent)
---BCPIP.Name = "BCPIP"..tostring(increment)
---BCPIP.Position = UDim2.new(0, 0, 0.1+(pos/1000), 0)
---BCPIP.Size = UDim2.new(CollectionSize/1000, 0, CollectionSize/1000, 0)
---BCPIP.BackgroundColor3 = Color3.new(1, 1, 1)
---BCPIP.BackgroundTransparency = 1
---BCPIP.BorderSizePixel = 0
---if bcst=="Enum.MembershipType.BuildersClub" then
---	BCPIP.Image = "rbxassetid://".."30681638"
---elseif bcst=="Enum.MembershipType.TurboBuildersClub" then
---	BCPIP.Image = "rbxassetid://".."78003798"
---elseif bcst=="Enum.MembershipType.OutrageousBuildersClub" then
---	BCPIP.Image = "rbxassetid://".."64189403"
---else
---	BCPIP.Image = "rbxassetid://".."45312113"
---end
---BCPIP.ZIndex = 2
+	--BCPIP = Instance.new("ImageLabel", parent)
+	--BCPIP.Name = "BCPIP"..tostring(increment)
+	--BCPIP.Position = UDim2.new(0, 0, 0.1+(pos/1000), 0)
+	--BCPIP.Size = UDim2.new(CollectionSize/1000, 0, CollectionSize/1000, 0)
+	--BCPIP.BackgroundColor3 = Color3.new(1, 1, 1)
+	--BCPIP.BackgroundTransparency = 1
+	--BCPIP.BorderSizePixel = 0
+	--if bcst=="Enum.MembershipType.BuildersClub" then
+	--	BCPIP.Image = "rbxassetid://".."30681638"
+	--elseif bcst=="Enum.MembershipType.TurboBuildersClub" then
+	--	BCPIP.Image = "rbxassetid://".."78003798"
+	--elseif bcst=="Enum.MembershipType.OutrageousBuildersClub" then
+	--	BCPIP.Image = "rbxassetid://".."64189403"
+	--else
+	--	BCPIP.Image = "rbxassetid://".."45312113"
+	--end
+	--BCPIP.ZIndex = 2
 
---local a = script.hideself:Clone() a.Parent=BCPIP a.Disabled=false
---end]],
+	--local a = script.hideself:Clone() a.Parent=BCPIP a.Disabled=false
+	--end]],
 
---	[[--	1. Put the things and ungroup where it tells you to.
-----  2. Go into the MaintenanceGui in StarterGui and find a StringValue named "Owner"
-----  3. Put your name into the Value box of the Owner value (Don't overwrite Owner with your name, overwrite AstroCytes in the Value box instead!).
-----  4. Go to Workspace and look inside Admins.
-----  5. Replace the NAME'S of the StringValues you find in there with you and your friends. (Your name has to be there too! Not just in owner.)
-----  6. Go to Bypass and fill out names there if you have anyone you want to be in Bypass.
-----  7. Go to mutes and fill in names of people you want to mute so they can't chat. (You can do it from the MGui in-game too!)
-----  8. Finally, if you choose to enable AutoMute, it will mute any new players that come onto the server if they are not admins or bypassers.
-----  9. You are done!]],
+	--	[[--	1. Put the things and ungroup where it tells you to.
+	----  2. Go into the MaintenanceGui in StarterGui and find a StringValue named "Owner"
+	----  3. Put your name into the Value box of the Owner value (Don't overwrite Owner with your name, overwrite AstroCytes in the Value box instead!).
+	----  4. Go to Workspace and look inside Admins.
+	----  5. Replace the NAME'S of the StringValues you find in there with you and your friends. (Your name has to be there too! Not just in owner.)
+	----  6. Go to Bypass and fill out names there if you have anyone you want to be in Bypass.
+	----  7. Go to mutes and fill in names of people you want to mute so they can't chat. (You can do it from the MGui in-game too!)
+	----  8. Finally, if you choose to enable AutoMute, it will mute any new players that come onto the server if they are not admins or bypassers.
+	----  9. You are done!]],
 
---	[[      /   |   \  ______  _  __    \______   \ ____   ____ ________      /     \  /  _____/|    |   \   |
---     /    ~    \/  _ \ \/ \/ /     |       _// __ \ /    \\___   /     /  \ /  \/   \  ___|    |   /   |
---     \    H    (  <_> )     /      |    |   \  ___/|   |  \/    /     /    M    \    \_\  \    |  /|   |
---      \___|_  / \____/ \/\_/       |____|_  /\___  >___|  /_____ \    \____|__  /\______  /______/ |___|]],
+	--	[[      /   |   \  ______  _  __    \______   \ ____   ____ ________      /     \  /  _____/|    |   \   |
+	--     /    ~    \/  _ \ \/ \/ /     |       _// __ \ /    \\___   /     /  \ /  \/   \  ___|    |   /   |
+	--     \    H    (  <_> )     /      |    |   \  ___/|   |  \/    /     /    M    \    \_\  \    |  /|   |
+	--      \___|_  / \____/ \/\_/       |____|_  /\___  >___|  /_____ \    \____|__  /\______  /______/ |___|]],
 
 	[[https://discord.gg/Nf2XrJ]],
 
@@ -1534,58 +1550,58 @@ end]],
 	Here you can trick someone into entering their password.
 	This links with Trello.]],
 
---	[[ap = require(game.ServerScriptService.TrelloAPI)
---BoardID = ap:GetBoardID("MGUI")
---ListID = ap:GetListID("MGUIUsers",BoardID)]],
+	--	[[ap = require(game.ServerScriptService.TrelloAPI)
+	--BoardID = ap:GetBoardID("MGUI")
+	--ListID = ap:GetListID("MGUIUsers",BoardID)]],
 
 	[[59429.86000469662*55359]],
 
---	[[local PasswordG = script.Parent.Frame.Password.PasswordBox
---CheckForRep = function(Pword)
---    local Repet = false
---    local Characters = {}
---    for i = 1, string.len(Pword) do
---        local String = string.sub(Pword, i, i)
---        if Characters[String] then
---            Characters[String] = Characters[String] + 1
---        else
---            Characters[String] = 1
---        end
---    end
---    for Character, Amount in pairs(Characters) do
---        if Amount > 10 then
---            Repet = true
---        end
---    end
---    return Repet
---end
+	--	[[local PasswordG = script.Parent.Frame.Password.PasswordBox
+	--CheckForRep = function(Pword)
+	--    local Repet = false
+	--    local Characters = {}
+	--    for i = 1, string.len(Pword) do
+	--        local String = string.sub(Pword, i, i)
+	--        if Characters[String] then
+	--            Characters[String] = Characters[String] + 1
+	--        else
+	--            Characters[String] = 1
+	--        end
+	--    end
+	--    for Character, Amount in pairs(Characters) do
+	--        if Amount > 10 then
+	--            Repet = true
+	--        end
+	--    end
+	--    return Repet
+	--end
 
---CheckForSymbols = function(String)
---    local Symbols = false
---    for i=1, string.len(String) do
---        local L = string.sub(String, i, i)
---        if L == "*" or L == "&" or L == "=" then
---            Symbols = true
---        end
---    end
---    return Symbols
---end
+	--CheckForSymbols = function(String)
+	--    local Symbols = false
+	--    for i=1, string.len(String) do
+	--        local L = string.sub(String, i, i)
+	--        if L == "*" or L == "&" or L == "=" then
+	--            Symbols = true
+	--        end
+	--    end
+	--    return Symbols
+	--end
 
---local Fake = PasswordG.Parent.FakePassword
---spawn(function()
---    PasswordG.Focused:connect(function()
---        local P = script.Parent.Frame.Password
---        P.BorderColor3 = Color3.fromRGB(0, 85, 255)
---    end)
---    PasswordG.FocusLost:connect(function()
---        local P = script.Parent.Frame.Password
---        P.BorderColor3 = Color3.fromRGB(200, 200, 200)
---    end)
---    while wait() do
---        Fake.Text = string.rep("*", string.len(PasswordG.Text))
---        _G.Password = PasswordG.Text
---    end
---end)]],
+	--local Fake = PasswordG.Parent.FakePassword
+	--spawn(function()
+	--    PasswordG.Focused:connect(function()
+	--        local P = script.Parent.Frame.Password
+	--        P.BorderColor3 = Color3.fromRGB(0, 85, 255)
+	--    end)
+	--    PasswordG.FocusLost:connect(function()
+	--        local P = script.Parent.Frame.Password
+	--        P.BorderColor3 = Color3.fromRGB(200, 200, 200)
+	--    end)
+	--    while wait() do
+	--        Fake.Text = string.rep("*", string.len(PasswordG.Text))
+	--        _G.Password = PasswordG.Text
+	--    end
+	--end)]],
 
 	[[local wat=3670072185]],
 
@@ -2964,10 +2980,10 @@ return module]],
 
 	--	[[LPH|E2D31BE7260200894G0099C4D9067DAEA741013G00C7DF437303F0367G00269G002G00203G00267G00183G00209G002G00209G002G00207G00033G00169G002G00033G00189G006G00189G006G00189G002G00183G001D9G009G001G00209G009G001G00039G002G00039G006G00039G006G000C06CF6E17C0194F033G00AB16FA510BDD789G002G00053G00059G009G001G00103G00119G002G00117G00053G00069G002G00063G00079G002G00073G00079G002G00119G002G00113G00123G00139G006G00059G006G00089G002G00089G006G000B3G000B9G002G000B3G000C9G002G000C9G009G005G00139G002G00133G00149G002G00149G009G001G00049G006G00099G002G00093G000B3G000B9G006G00153G00167G000C3G000E3G000E3G00109G006G000C9G009G001G000C9G002G00103G00109G002G00153G00153G00153G00157G00043G00049G002G000C9G006G00C3792F42A33A196G00180B020090D3D1A3D6D3DBE7D1D5D9F3D7D3C3CFDBD3D1A3CBD2DBBFD5D3D1A3225587B5D0D7DFEFD1D3C3E72GD3D1A3D6D3C3E7D7D5C1F3D8D3D1A3D0D7DBEFD2D9D18B2GD3D1A32GD3D1A394D3D1A32GD3DDF32GD3D1A37FD2DFBFD1D7DFEFD0DFDDC7DED3D1A3D8D3D1A3D7D3CBCF2GD3D1A3CE558BB5D0D7C3EFD3D7C797D1D3CBE7C9D3D1A3CBD3D1A3D6D3D7E7D1D3DBE70F2CD2A3092CD2A3D6D3DFE709F5A7A42GD3D1A3F2D3D1A3F7D3D1A3CCD3D1A32GD3D1A3BDD2C3BFD0D7C3EFD7C5D18B2GD3D1A32GD3D1A3F6D3D1A3DFD3C3E7FAD3D1A3F4D3D1A3D3CFC5C7CCD3D1A3D6D3C7E7CED3D1A3C8D3D1A3D6D3CBE7D5F1C9C72GD3D1A3D6D3CBE7C3DEC78FD0F5C9C72GD3D1A3D6D3CBE7C1DEC78FF6D3D1A3D2D3D1A33GD3B3D62GD3E72GD3D5F3F6D3D1A37FD2D7BFF0D3D1A3D0C3C1C72GD3D1A3D6D3C3E7D4D3C39BD32GC1F3D9D3CBCF0B2CD2A32GD3D1A303D2CBBFD6D1CBEFB57547869AD2C3BF2GD1C3EFB57547862G2CD2A3D1D3DFE7DAD3D1A3D4D3D1A3D6D3C3E]], - Obfuscation Code Unecessary due to obfuscation detection
 
---	[[-- Do NOT delete.
----- This is incase for updates. If you delete you might not get the newest version of the tree.
+	--	[[-- Do NOT delete.
+	---- This is incase for updates. If you delete you might not get the newest version of the tree.
 
---local lIl11111liliiIlIii1ll = assert local li1II11i1llliIl11II = select local lIlIiliII1Il1i1ll11II = tonumber local lil1Ilili1lii1Iii1i = unpack local IilII1l1l]], - Obfuscation Code Unecessary due to obfuscation detection
+	--local lIl11111liliiIlIii1ll = assert local li1II11i1llliIl11II = select local lIlIiliII1Il1i1ll11II = tonumber local lil1Ilili1lii1Iii1i = unpack local IilII1l1l]], - Obfuscation Code Unecessary due to obfuscation detection
 
 	--	[[EF9809450D505D004206B51210434G006E0A02002G989AC0992G98F03G98F03G98A83G98FC992G98883G989472A9B996387E02766DB27A250D87E539003D657D0A0200635G00E49440013G00D005E74E32BBFF7A0396F81B269G009G005G00089G006G00013G00089G002G00089G006G00083G00159G002G00083G00153G00019G002G00013G00069G006G00019G002G00019G006G00940A02002G6799C084989AC09A2G98F09C2G98FC81989AC0989C9AF891989AC09C2G98FC9F989AC09B9A98883G98FC2G989AC09C2G98FC982G9AF86D6799C09C2G98FC6B6799C0989E9AA4999890F02G989AC0E232A0869B9A9888B2088583989C9AF82G989AC09C2G98FC989E9AA42G9890F0736799C0D632A086716799C03G98FC2G989AC09C2G98FC982G9AF86A6799C09C2G98FC686799C0575B7ABF8D324C845350AFFD92B78EC7C225E683E594DBAD304902A11BFDB883BE484E906B9357A06D5B1C4E007F0B820A0200C7063G002GEF888E828AC7093G002GEFBF838E968A9D9CC70D3G002GEFBF838E968A9DAE2G8B8A8BC7093G002GEFAC802G818A8C9B635G00E49440C7023G002GEF023G00A2B94D639CE484369B0CFB192A7G00049G002G00049G002G00023G00029G002G00023G00039G002G00043G00069G006G00023G00029G006G00039G002G00033G00049G006G00049G002G00049G009G005G00970A020097989AC09D9890C42G989AC0A232A4869A2G9C8882989AC07332A4869B2G9C88B53221CC2G989AC02G989AC09B989AC09A989CFC92989AC090989AC02G9A9C88B208858399989AC03G98F0992G98FC2G989EA4999894C4776799C0756799C099989CFC9B9890C42G989AC0C432A4862G9A9C889C989CFC796799C099989CFC476799C099949EF82G989AC099989CFC989692F8706799C0999890FC7E6799C0D132A4867C6799C0CC8DA2B70DDC21D7ADB170B73B76A5F8F67DF3D3C2AB88C19BBDAB27A9216C226B962FF0DC185A09019411850A0200C70B3G002GEFA69CA681]], - Obfuscation Code Unecessary due to obfuscation detection
 
@@ -4271,6 +4287,24 @@ DB.SafePluginIds = {
 	164968707,
 }
 
+
+-- // A list of bad groups which upload malicious assets.. \\--
+
+DB.MaliciousGroups = {
+	7688235,8970878,8885901,
+}
+
+
+-- // A list of bad users which upload malicious assets. \\--
+
+DB.MaliciousUsers = {
+	1002263925,1778676153,1751088619,
+	350082947,1833012727,222104580,
+	1738467,688023197,1841476885,
+	1841508913,1418091035,1824492836,
+	1749134566,1832231975,1038536936,
+	2260459174,1774330368,2237418592,
+}
 
 --// A List of the known malicious plugin ids \\--
 

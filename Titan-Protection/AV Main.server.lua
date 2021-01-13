@@ -1,6 +1,6 @@
 --[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  Swan Airways
+    Copyright © 2020  ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@
 
 ]]
 
-local Current_Version = "Alpha 0.0.4"
+local Current_Version = "Alpha 0.0.9"
 
 -----------------
 --| Lua Check |--
@@ -840,7 +840,7 @@ local function init()
 		if LibrariesContainer and DB then
 			Running = true
 			InsertPluginHashes()
-			OldPrint([[[Ti-Protection]: Titan Protection  Copyright © 2020  Swan Airways
+			OldPrint([[[Ti-Protection]: Titan Protection  Copyright © 2020  ccuser44 (ALE111_boiPNG)
     This program comes with ABSOLUTELY NO WARRANTY; for details see the `LISENCE' file inside the plugin folder.
     This is free software, and you are welcome to redistribute it
     under certain conditions; for details see the `LISENCE' file inside the plugin folder.]])
