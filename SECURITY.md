@@ -7,8 +7,8 @@ version is the newest one! On release versions some release versions may be deem
 
 | Version | Supported          |
 | ------- | ------------------ |
-| α0.0.7  | :white_check_mark: |
-| <α0.0.7 | :x:                |
+| α0.0.9  | :white_check_mark: |
+| <α0.0.9 | :x:                |
 
 ## Reporting a Vulnerability
 
