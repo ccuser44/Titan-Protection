@@ -3234,15 +3234,15 @@ DB.Obfuscation_Detection_Formats = {
 
 	"[^(_%w)]require%s+[^%(]",
 
-	"[^(_%w)]require[^%s%(]",
+	"[^(_%w)]require[^%s_%w%(]",
 
 	"[^(_%w)]getfenv%s+[^%(]",
 
-	"[^(_%w)]getfenv[^%s%(]",
+	"[^(_%w)]getfenv[^%s_%w%(]",
 
 	"[^(_%w)]setfenv%s+[^%(]",
 
-	"[^(_%w)]setfenv[^%s%(]",
+	"[^(_%w)]setfenv[^%s_%w%(]",
 
 }
 
