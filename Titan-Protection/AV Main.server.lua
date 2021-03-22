@@ -1,6 +1,6 @@
 --[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020  ccuser44 (ALE111_boiPNG)
+    Copyright © 2020  Github@ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@
 
 ]]
 
-local Current_Version = "Alpha 0.0.9"
+local Current_Version = "Beta 0.0.1"
 
 -----------------
 --| Lua Check |--
@@ -69,6 +69,7 @@ local LibrariesContainer = Container:WaitForChild("Libs",  25)
 local Sounds = Container:WaitForChild("Sound_Storage", 25)
 local UI = Container:WaitForChild("UI", 25)
 local DB = Container:WaitForChild("DataBase", 25) and require(Container:WaitForChild("DataBase", 25))
+local Hearbeat = RunService.Heartbeat
 
 -- // Tables
 local Dependancies = {}
@@ -89,15 +90,16 @@ local DefaultSettings = { -- // The default settings the plugin will refer to so
 	CheckWhiteSpace = true,
 	CheckSnippets = true,
 	CheckAdware = true,
-	UseDestroy = false,
+	UseDestroy = true,
 	DisableFoundScripts = true,
 	CheckRequireIdsAllScripts = false,
 	AutoUpdate = true, -- // If this is enabled the script will use the auto updating module. If it cannot connect to it it will fal back to the offline mode.
 	DoNotScanSafe = true,
 	OnlyScanScripts = false,
 	IsDebug = true,
-	IsUI = true, -- // If the plugin will be displayed with UI
-	AssetCachePersist = true
+	IsUI = false, -- // If the plugin will be displayed with UI
+	AssetCachePersist = true, -- // If the asset cache persists on the studio instance.
+	SaveAssetCacheShutdown = true -- // If the asset cache gets saved into the settings. (Can be used by other studio instances later.)
 }
 local SettingsCache = {}
 local Settings = setmetatable({}, { -- // The metatable function for settings so we can manage them easier.
@@ -112,22 +114,18 @@ local Settings = setmetatable({}, { -- // The metatable function for settings so
 				warn("An error occured while trying to get settings from" .. tostring(Index) .. ", Reason: " .. tostring(Err))
 				print(debug.traceback())
 			end)
-			if Success then
-				if Return ~= nil then
-					return Return
-				end
+			if Success and Return ~= nil then
+				return Return
 			end
 		end
-		if DefaultSettings[Index] then
-			return DefaultSettings[Index]
-		end
-		return nil
+		
+		return DefaultSettings[Index]
 	end,
 	__newindex = function(_, Index, Value)
 		SettingsCache[Index] = Value
 		if SaveSettings then
 			xpcall(function()
-				plugin:GetSetting(Index)
+				plugin:SetSetting(Index, Value ~= DefaultSettings[Index] and Value or nil)
 			end, function(Err)
 				warn("An error occured while trying to save settings to " .. tostring(Index) .. ", Reason: " .. tostring(Err))
 				print(debug.traceback())
@@ -209,15 +207,15 @@ for i, v in ipairs(DB2.Obfuscation_Detection) do
 end
 
 for i, v in ipairs(DB2.Adware_Detection_Formates) do
-	DB.Adware_Detection_Formates[i] = string.lower(string.gsub(v, "\n", ""))
+	DB.Adware_Detection_Formates[i] = string.lower(v)
 end
 
-for _, v in ipairs(DB.Code_Snippets_Formats) do
-	table.insert(DB.malicious_code_snippets, string.lower(string.gsub(v, "\n", "")))
+for i, v in ipairs(DB2.Code_Snippets_Formats) do
+	DB.Code_Snippets_Formats[i] = string.lower(v)
 end
 
-for _, v in ipairs(DB.Obfuscation_Detection_Formats) do
-	table.insert(DB.Obfuscation_Detection, string.lower(string.gsub(v, "\n", "")))
+for i, v in ipairs(DB2.Obfuscation_Detection_Formats) do
+	DB.Obfuscation_Detection_Formats[i] = string.lower(v)
 end
 
 for i, v in ipairs(DB2.StaticVirusNames) do
@@ -236,7 +234,7 @@ for _, v in ipairs(DB.SafeModelIds) do
 	GlobalAssetCache[v] = {false, false, false, false, false}
 end
 
-local DB_VirusNames, DB_StaticVirusNames, DB_malicious_code_snippets, DB_Obfuscation_Detection, DB_Bad_Require_Ids, DB_Adware_Detection_Formates, DB_MaliciousGroups, DB_MaliciousUsers = DB.VirusNames, DB.StaticVirusNames, DB.malicious_code_snippets, DB.Obfuscation_Detection, DB.Bad_Require_Ids, DB.Adware_Detection_Formates, DB.MaliciousGroups, DB.MaliciousUsers
+local DB_VirusNames, DB_StaticVirusNames, DB_malicious_code_snippets, DB_Obfuscation_Detection, DB_Bad_Require_Ids, DB_Adware_Detection_Formates, DB_Obfuscation_Detection_Formats, DB_Code_Snippets_Formats, DB_MaliciousGroups, DB_MaliciousUsers = DB.VirusNames, DB.StaticVirusNames, DB.malicious_code_snippets, DB.Obfuscation_Detection, DB.Bad_Require_Ids, DB.Adware_Detection_Formates, DB.Obfuscation_Detection_Formats, DB.Code_Snippets_Formats, DB.MaliciousGroups, DB.MaliciousUsers
 
 --------------------
 --| UI functions |--
@@ -268,7 +266,7 @@ local function Display_Notification(Title, Text, Type)
 		-- // Set display stuff
 		CurrentNotification.Parent = CoreGui:FindFirstChild("Ti-P Notifications")
 
-		Debris:AddItem(CurrentNotification, 1.5 + 0)
+		Debris:AddItem(CurrentNotification, 1.5)
 	end
 end
 
@@ -287,16 +285,16 @@ local function PromptUserYield(Title, Text)
 	local Button1, Button2 -- // GetButtons from GUI
 	local Event1, Event2 = Button1.Activated:Connect(function()
 		HasClicked = true
-		wait(0)
+		Hearbeat:Wait()
 		Clicked:Fire()
 	end), Button2.Activated:Connect(function()
 		HasClicked = true
-		wait(0)
+		Hearbeat:Wait()
 		Clicked:Fire()
 	end)
 	-- // Display UI
 	
-	Clicked.Event:wait()
+	Clicked.Event:Wait()
 	Event1:Disconnect()
 	Event2:Disconnect()
 	Clicked:Destroy()
@@ -365,7 +363,7 @@ end
 local function HandleContainer()
 	local Folder = game:FindFirstChild(GlobalFolderName)
 	if not Folder then
-		local Folder = Instance.new("Folder", game)
+		Folder = Instance.new("Folder", game)
 		Folder.Name = GlobalFolderName
 	end
 	return Folder
@@ -386,7 +384,7 @@ local function HandleObject(Obj, CanDisable, Detection)
 		DetectionVar.Value = tostring(Detection)
 		DetectionVar.Name = "Detection"
 	end
-	if (Obj:IsA("Script") or Obj:IsA("LocalScript")) and CanDisable and Obj.Disabled == false then
+	if CanDisable and (Obj:IsA("Script") or Obj:IsA("LocalScript")) and Obj.Disabled == false then
 		Obj.Disabled = true
 		local OrgDisable = Instance.new("BoolValue", ValueContainer)
 		OrgDisable.Value = false
@@ -458,8 +456,12 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 			end
 		elseif Obj:IsA("JointInstance") and not Obj.Part1 and not Obj.Part0 and Obj:FindFirstChildOfClass("Script") then -- // This could be a possible weld virus
 			IsSuspicious = true
-		elseif HiddenClasses[Obj.ClassName] and Obj:FindFirstChildOfClass("Script") then -- // This id definetly a virus which tries to hide itself. Likely the "RopackVirus"
-			IsVirus = true
+		elseif HiddenClasses[Obj.ClassName] then -- // This id definetly a virus which tries to hide itself. Likely the "RopackVirus"
+			if Obj:FindFirstChildOfClass("Script") then
+				IsVirus = true
+			elseif Obj.Name ~= Obj.ClassName then
+				IsSuspicious = true
+			end
 		end
 	end
 	
@@ -476,6 +478,7 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 			end
 		end
 	end
+	
 	if not IsVirus then
 		for _, Name in ipairs(DB_VirusNames) do
 			if string.match(ObjName, Name) then
@@ -499,7 +502,8 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 				IsVirus = true
 			end
 		else
-			local src = string.gsub(string.lower(ObjSource), "\n", "")
+			local SrcNewlines = string.lower(ObjSource)
+			local src = string.gsub(SrcNewlines, "\n", "")
 			local BadstringCount = 0
 			
 			for _, Str in ipairs(DB_VirusNames) do -- // We check if the script contains virus names.
@@ -508,7 +512,7 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 						print(Str)
 					end
 					IsSuspicious = true
-					BadstringCount = BadstringCount + 1
+					BadstringCount += 1
 					if BadstringCount >= 4 then
 						IsVirus = true
 						break
@@ -518,13 +522,38 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 			
 			if CheckSnippets and IsVirus == false then -- // We check if the script contains malicious code snippets.
 				local SnippetCount = 0
-				if not SeperateMalIds or string.match(src, "require") or string.match(src, "fenv") or string.match(src, "marketplace") or string.match(src, "teleport") --[[or string.match(src, "insert")]] then
-					for I, Str in ipairs(DB_Bad_Require_Ids) do
-						if string.match(src, Str) then
+				local IsRequireScanning = not SeperateMalIds or string.match(src, "require") or string.match(src, "fenv") or string.match(src, "marketplace") or string.match(src, "teleport")
+				
+				for _, Str in ipairs(table.pack(table.unpack(DB_malicious_code_snippets), table.unpack(IsRequireScanning and DB_Bad_Require_Ids or {}))) do
+					if string.match(src, Str) then
+						if IsDebug then
+							print(Str)
+						end
+						SnippetCount += 1
+						IsSuspicious=true
+						if SnippetCount >= 1 and BadstringCount >= 1 then
+							IsVirus = true
+							break
+						elseif SnippetCount >= 3 then
+							IsVirus = true
+							break
+						end
+					end
+					
+					--if IsRequireScanning then
+					--	LastScanMode2 += 1 -- // This is here so the plugin does not crash
+					--	if LastScanMode2 % 100 == 3 then
+					--		Hearbeat:Wait()
+					--	end
+					--end
+				end
+				if not IsVirus then
+					for _, Str in ipairs(DB_Code_Snippets_Formats) do
+						if string.match(SrcNewlines, Str) then
 							if IsDebug then
 								print(Str)
 							end
-							SnippetCount = SnippetCount + 1
+							SnippetCount += 1
 							IsSuspicious=true
 							if SnippetCount >= 1 and BadstringCount >= 1 then
 								IsVirus = true
@@ -535,31 +564,11 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 							end
 						end
 					end
-					LastScanMode2 = LastScanMode2 + 1 -- // This is here so the plugin does not crash
-					if LastScanMode2 % 50 == 3 then
-						wait(0)
-					end
-				end
-				for I, Str in ipairs(DB_malicious_code_snippets) do
-					if string.match(src, Str) then
-						if IsDebug then
-							print(Str)
-						end
-						SnippetCount = SnippetCount + 1
-						IsSuspicious=true
-						if SnippetCount >= 1 and BadstringCount >= 1 then
-							IsVirus = true
-							break
-						elseif SnippetCount >= 3 then
-							IsVirus = true
-							break
-						end
-					end
 				end
 			end
 			
 			if IsVirus == false and CheckObf then -- //  We check if the script contains obfuscation.
-				for I, Str in ipairs(DB_Obfuscation_Detection) do
+				for _, Str in ipairs(DB_Obfuscation_Detection) do
 					if string.match(src, Str) then
 						if IsDebug then
 							print(Str)
@@ -569,6 +578,20 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 							IsVirus = true
 						end
 						break
+					end
+				end
+				if not IsObfuscated then
+					for _, Str in ipairs(DB_Obfuscation_Detection_Formats) do
+						if string.match(SrcNewlines, Str) then
+							if IsDebug then
+								print(Str)
+							end
+							IsObfuscated = true
+							if IsSuspicious then
+								IsVirus = true
+							end
+							break
+						end
 					end
 				end
 			end
@@ -585,8 +608,8 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 			end
 			
 			if IsVirus == false and CheckAdware then -- // We check if the script contains adware.
-				for I, Str in ipairs(DB_Adware_Detection_Formates) do
-					if string.match(src, Str) then
+				for _, Str in ipairs(DB_Adware_Detection_Formates) do
+					if string.match(SrcNewlines, Str) then
 						if IsDebug then
 							print(Str)
 						end
@@ -601,55 +624,45 @@ local function ScanObj(Obj, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSn
 			
 			-- // We check if a require id is malicious.
 			if IsVirus == false then
-				local NewSrc = string.gsub(src, "%s", "")
-				repeat
-					local First, Last = string.find(NewSrc, "require%b()")
-					if First and Last then
-						if string.sub(NewSrc, First, Last) ~= "require()" then
-							
-							local Id = string.sub(NewSrc, First + 8, Last - 1)
-							NewSrc = string.sub(NewSrc, Last + 1)
-							
-							if not string.match(Id, "[\"\']") then
-								if IsDebug then
-									print("Titan protection found require with id ", Id)
+				for FoundRequire in string.gmatch(string.gsub(src, "%s", ""), "require%b()") do
+					if string.len(FoundRequire) <= 9 then
+						continue
+					end
+					
+					local Id = string.sub(FoundRequire, 9, string.len(FoundRequire) - 1)
+					
+					if IsDebug then
+						print("Titan protection found require with id ", Id)
+					end
+					
+					local StrippedId = string.gsub(string.gsub(string.gsub(Id, ":%s*waitforchild%s*%b()", ""), "%b\'\'", ""), "%b\"\"", "")
+					if string.match(StrippedId, "[%%%-%+%*/%^%-]") or string.match(StrippedId, "math%.%a+") or string.match(StrippedId, "0x%x%x") or string.match(StrippedId, "0b[01][01][01]+") or string.match(StrippedId, "[%d%.]+e%-*%d") or string.match(StrippedId, "tonumber") or string.match(StrippedId, "string%.%a+") then -- // We check if the require id is obfuscated. A lot of new backdoors do this.
+						IsObfuscated = true
+						if IsSuspicious then
+							IsVirus = true
+						end
+					elseif string.len(Id) >= 3 and string.match(Id, "^%d+$") and GetLib("CheckModule") and GetLib("ScanObjectsGet") then -- // We scan the id for malicious content
+						local IsVir, IsSus, IsObf, IsLar, IsAdw = GetLib("CheckModule")(Id, ScanObj, GetLib("ScanObjectsGet"), RepeatCount, CachedIds, IsDebug, SafeHashes, HashSource, SeperateMalIds, {CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware}, DB_MaliciousGroups, DB_MaliciousUsers)
+						local Detected = IsVir or IsSus or IsObf or IsLar or IsAdw
+						
+						if Detected then
+							IsVirus, IsSuspicious, IsTooMuchWhitespace, IsObfuscated, IsAdware = IsVirus or IsVir, IsSuspicious or IsSus, IsTooMuchWhitespace or IsLar, IsObfuscated or IsObf, IsAdware or IsAdw
+							if not IsVirus then
+								if not IsSuspicious and IsTooMuchWhitespace and IsObfuscated then
+									IsSuspicious = true
+								elseif IsSuspicious and (IsTooMuchWhitespace or IsObfuscated) then
+									IsVirus = true
+									break
 								end
-								
-								if string.match(Id, "[%%%-%+%*/%^%-]") or string.match(Id, "math%.%a+") or string.match(Id, "0x%x%x") or string.match(Id, "0b[01][01][01]+") or string.match(Id, "[%d%.]+e%d") then -- // We check if the require id is obfuscated. A lot of new backdoors do this.
-									IsObfuscated = true
-									if IsSuspicious then
-										IsVirus = true
-									end
-								elseif string.len(Id) >= 3 and string.match(Id, "^%d+$") and GetLib("CheckModule") and GetLib("ScanObjectsGet") then -- // We scan the id for malicious content
-									local IsVir, IsSus, IsObf, IsLar, IsAdw = GetLib("CheckModule")(Id, ScanObj, GetLib("ScanObjectsGet"), RepeatCount, CachedIds, IsDebug, SafeHashes, HashSource, SeperateMalIds, {CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware}, DB_MaliciousGroups, DB_MaliciousUsers)
-									local Detected = IsVir or IsSus or IsObf or IsLar or IsAdw
-									
-									if Detected then
-										IsVirus, IsSuspicious, IsTooMuchWhitespace, IsObfuscated, IsAdware = IsVirus or IsVir, IsSuspicious or IsSus, IsTooMuchWhitespace or IsLar, IsObfuscated or IsObf, IsAdware or IsAdw
-										if not IsVirus then
-											if not IsSuspicious and IsTooMuchWhitespace and IsObfuscated then
-												IsSuspicious = true
-											elseif IsSuspicious and (IsTooMuchWhitespace or IsObfuscated) then
-												IsVirus = true
-												break
-											end
-											if IsAdware and (IsSuspicious or IsObfuscated or IsTooMuchWhitespace) then
-												IsVirus = true
-												break
-											end
-										end
-									end
+								if IsAdware and (IsSuspicious or IsObfuscated or IsTooMuchWhitespace) then
+									IsVirus = true
+									break
 								end
-
 							end
-							
-						else
-							NewSrc = string.sub(NewSrc, Last + 1)
 						end
 					end
-				until not string.match(NewSrc, "require%b()")
+				end
 			end
-			
 		end
 	end
 	return IsVirus, IsSuspicious, IsObfuscated, IsTooMuchWhitespace, IsAdware
@@ -673,11 +686,7 @@ local function ScanPluginsNoHTTP()
 		warn("An error occured while trying to scan plugins with non HTTP method. Error:", Error)
 	end)
 	
-	if Success and type(Return) == "table" then
-		return Return
-	else
-		return {}
-	end
+	return (Success and type(Return) == "table") and Return or {}
 end
 
 -- // Handles the scanning of a table of assets.
@@ -734,7 +743,7 @@ local function Scan(ScanType, CanAffect, Obj)
 	local OrgCollected = gcinfo()
 	local BadObjects = 0
 	-- // We store the settings in a variable so we don't have to constantly index them.
-	local CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckRequireIdsAllScripts, CheckAdware, IsDebug = Settings.CheckScriptSource, Settings.CheckObfuscation, Settings.CheckWhiteSpace, Settings.CheckLarge, Settings.CheckSnippets, Settings.CheckStructure, Settings.CheckRequireIdsAllScripts, Settings.CheckAdware, Settings.IsDebug
+	local CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckRequireIdsAllScripts, CheckAdware, IsDebug, CanQuarantine, UseDestroy = Settings.CheckScriptSource, Settings.CheckObfuscation, Settings.CheckWhiteSpace, Settings.CheckLarge, Settings.CheckSnippets, Settings.CheckStructure, Settings.CheckRequireIdsAllScripts, Settings.CheckAdware, Settings.IsDebug, Settings.Quarantine, Settings.UseDestroy
 	local CachedIds = Settings.AssetCachePersist == true and GlobalAssetCache or {}
 	local BadPluginIds, BadInventoryIds = {}, {}
 	
@@ -751,7 +760,7 @@ local function Scan(ScanType, CanAffect, Obj)
 			warn("Could not use HTTP service to scan the plugins. Please allow the plugin to connect to https://inventory.rprxy.xyz/. Using backup method for scanning. Note this will take much longer.")
 			BadPluginIds = ScanPluginsNoHTTP()
 		else
-			if PromptUserYield("Please allow to connect to HTTP Service", "") and wait() and TestHTTP() then
+			if PromptUserYield("Please allow to connect to HTTP Service", "") and Hearbeat:Wait() and TestHTTP() then
 				BadPluginIds, BadInventoryIds = ScanInventory(CachedIds, IsDebug)
 			else
 				warn("Could not use HTTP service to scan the plugins. Please allow the plugin to connect to https://inventory.rprxy.xyz/. Using backup method for scanning. Note this will take much longer.")
@@ -769,7 +778,7 @@ local function Scan(ScanType, CanAffect, Obj)
 	for i, Object in ipairs(ScanObjs) do
 		if not Object:IsDescendantOf(HandleContainer()) then
 			if i % 98304 == 2048 then -- // We have this here to introduce a bit of wait time so the plugin does not crash.
-				wait(0)
+				Hearbeat:Wait()
 			end
 			-- // We check if the object is malicious.
 			local IsVirus, IsSus, IsObf, IsLar, IsAdw = ScanObj(Object, CheckSource, CheckObf, CheckSpace, CheckLen, CheckSnippets, CheckStructure, CheckAdware, 0, CachedIds, CheckRequireIdsAllScripts, IsDebug)
@@ -778,11 +787,11 @@ local function Scan(ScanType, CanAffect, Obj)
 					local Detection =  (IsVirus and "Virus" or IsSus and "Suspicious" or IsObf and "Obfuscated" or IsLar and "Too much whitespace" or IsAdw and "Adware")
 					print(Object:GetFullName(), " Detection: ", Detection)
 					if CanAffect then
-						BadObjects = BadObjects + 1
-						if Settings.Quarantine ~= false then
+						BadObjects += 1
+						if CanQuarantine ~= false then
 							HandleObject(Object, Settings.DisableFoundScripts, Detection)
 						else
-							if Settings.UseDestroy then
+							if UseDestroy then
 								Obj:Destroy()
 							else
 								Obj.Parent = nil
@@ -812,12 +821,12 @@ end
 local function InitScan(Type, CanAffect)
 	if Scanning == false then
 		Scanning = true
-		ChangeHistoryService:SetWaypoint("Titan Protection: Start " .. tostring(Type):lower() .. " scan")
+		ChangeHistoryService:SetWaypoint(string.format("Titan Protection: Start %s scan", string.lower(tostring(Type))))
 		local Success, _, Return = xpcall(Scan, function(ScanError)
-			warn("An error occured while trying to make a scan! Reason: " .. tostring(ScanError))
+			warn("An error occured while trying to scan the game! Reason: " .. tostring(ScanError))
 			print(debug.traceback())
 		end, Type, CanAffect)
-		ChangeHistoryService:SetWaypoint("Titan Protection: Finnish " .. tostring(Type):lower() .. " scan")
+		ChangeHistoryService:SetWaypoint(string.format("Titan Protection: Finnish %s scan", string.lower(tostring(Type))))
 		Scanning = false
 	else
 		warn("Cannot start a scan while an other scan is running! Aborting ...")
@@ -837,58 +846,95 @@ Scanning = false
 -- // Main init function
 local function init()
 	if Running == false then
-		if LibrariesContainer and DB then
-			Running = true
-			InsertPluginHashes()
-			OldPrint([[[Ti-Protection]: Titan Protection  Copyright © 2020  ccuser44 (ALE111_boiPNG)
+		assert(LibrariesContainer and DB, "[Ti-Protection]: Some core assets are missing! Titan protection cannot continue running.")
+		
+		Running = true
+		InsertPluginHashes()
+		OldPrint([[[Ti-Protection]: Titan Protection  Copyright © 2020  Github@ccuser44 (ALE111_boiPNG)
     This program comes with ABSOLUTELY NO WARRANTY; for details see the `LISENCE' file inside the plugin folder.
     This is free software, and you are welcome to redistribute it
     under certain conditions; for details see the `LISENCE' file inside the plugin folder.]])
-			local name = "|| Titan Protection ||"
-			local toolbar = plugin:CreateToolbar(name)
-			local FastScanButton = MakePluginButton(
-				toolbar,
-				"Fast Scan",
-				"Perform a fast antivirus scan on your game. It is advised that you select the full option.",
-				"rbxassetid://195998819",
-				function()
-					InitScan("Fast", true)
-				end
-			)
-			local FullScanButton = MakePluginButton(
-				toolbar,
-				"Full Scan",
-				"Perform a fast antivirus scan on your game. It is advised that you select the full option.",
-				"rbxassetid://195998819",
-				function()
-					InitScan("Full", true)
-				end
-			)
-			if Settings.StartUpScan == true then
-				if Settings.IsDebug then
-					debug.profilebegin("Titan Protection: Automatic scan")
-				end
-				Scanning = true
-				ChangeHistoryService:SetWaypoint("Titan Protection: Start automatic scan")
-				xpcall(Scan, function(ScanError)
-					warn("An error occured while trying to make a scan! Reason: " .. tostring(ScanError))
-					print(debug.traceback())
-				end, "Fast", true)
-				ChangeHistoryService:SetWaypoint("Titan Protection: Start automatic scan")
-				Scanning = false
-				if Settings.IsDebug then
-					debug.profileend()
+		
+		local name = "|| Titan Protection ||"
+		local toolbar = plugin:CreateToolbar(name)
+		MakePluginButton(
+			toolbar,
+			"Fast Scan",
+			"Perform a fast antivirus scan on your game. It is advised that you select the full option.",
+			"rbxassetid://195998819",
+			function()
+				InitScan("Fast", true)
+			end
+		)
+		MakePluginButton(
+			toolbar,
+			"Full Scan",
+			"Performs a full scan on your game. Note this will take much longer and will have more lag.",
+			"rbxassetid://195998819",
+			function()
+				InitScan("Full", true)
+			end
+		)
+		MakePluginButton(
+			toolbar,
+			"Settings",
+			"Allows you to change the settings of the plugin.",
+			"rbxassetid://1291127922",
+			function()
+				
+			end
+		)
+		
+		if Settings.StartUpScan == true then
+			if Settings.IsDebug then
+				print("Started automatic scan.")
+				print(debug.traceback())
+			end
+			Scanning = true
+			ChangeHistoryService:SetWaypoint("Titan Protection: Start automatic scan")
+			xpcall(Scan, function(ScanError)
+				warn("An error occured while trying to scan the game! Reason: " .. tostring(ScanError))
+				print(debug.traceback())
+			end, "Fast", true)
+			ChangeHistoryService:SetWaypoint("Titan Protection: Finhished automatic scan")
+			Scanning = false
+		end
+		
+		plugin.Unloading:Connect(function()
+			local IsDebug = Settings.IsDebug
+			
+			if IsDebug then
+				print("Plugin unloading...")
+			end
+			if Scanning then
+				warn("WARNING PLUGIN WAS SHTUDOWNED WHEN THERE WAS AN ACTIVE SCAN RUNNING!")
+				print(debug.traceback())
+			end
+			
+			local TitanGui = CoreGui:FindFirstChild("Ti-P Notifications")
+			if TitanGui then
+				TitanGui:Destroy()
+				if IsDebug then
+					print("Removed TitanGui from CoreGui")
 				end
 			end
-		else
-			error("[Ti-Protection]: Some core assets are missing! Titan protection cannot continue running.")
-		end
+			
+			if Settings.SaveAssetCacheShutdown then
+				xpcall(function()
+					
+					if IsDebug then
+						print("Plugin saved asset cache correctly!")
+					end
+				end, function(Err)
+					warn("An error occured while trying to save assets cache. Reason: " .. tostring(Err) .. " Unable to save asset cache!")
+					print(debug.traceback())
+				end)
+			end
+		end)
 	end
 end
 
 -- // We check if the plugin can run to prevent it running in situations where it is not supposed to.
-if plugin and RunService:IsStudio() then
-	init()
-else
-	error("[Ti-Protection]: Titan Protection cannot run while not being a plugin!")
-end
+assert(plugin and RunService:IsStudio(), "[Ti-Protection]: Titan Protection cannot run while not being a plugin!")
+
+init()

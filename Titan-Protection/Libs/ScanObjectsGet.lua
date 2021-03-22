@@ -1,6 +1,6 @@
 --[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020 ccuser44 (ALE111_boiPNG)
+    Copyright © 2020  Github@ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

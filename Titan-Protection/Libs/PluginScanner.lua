@@ -1,6 +1,6 @@
 --[[
     Titan Protection is an antivirus plugin designed to detect and clean up malicious scripts in a Roblox development enviroment.
-    Copyright © 2020 ccuser44 (ALE111_boiPNG)
+    Copyright © 2020  Github@ccuser44 (ALE111_boiPNG)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,6 +17,8 @@
 ]]
 
 local InsertService = game:GetService("InsertService")
+local RunService =  game:GetService("RunService")
+local Hearbeat = RunService.Heartbeat
 
 
 -- // Plugin Scanner func \\ --
@@ -46,7 +48,7 @@ return function(KnownMaliciousPluginsIDs)
 			table.insert(Tab, Id)
 		end
 		if i % 64 == 4 then
-			wait(0)
+			Hearbeat:Wait()
 		end
 	end
 	return Tab
