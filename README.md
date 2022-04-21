@@ -1,4 +1,4 @@
-I've decided to archive this as I'm no longer using this and it's probably not getting updated, I have locally developed this a bit further but I don't think this holds as much value though. You can still use this and I'll probably updated this to the latest version soon.
+I've decided to archive this as I'm no longer using this and it's probably not getting updated, I have locally developed this a bit further but I don't think this holds as much value though. You can still use this and I'll probably updated this to the latest version soon, but other than that it will probably not get updated.
 
 # Titan-Protection
 Titan Protection is a Roblox plugin to remove malicious objects. This is unready and in shared alpha testing.
